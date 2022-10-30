@@ -10,3 +10,4 @@ This is the official repository kept and maintained for the portfolio website of
 <hr>
 
 #### Developed and Maintained by [Navaneet.J](https://github.com/navaneet239)
+#### Homepage © 2022 by Navaneet.J is licensed under CC BY 4.0
