@@ -8,15 +8,14 @@
   font-size:2vw;}
 
 .bg {
-  background: url("Assets/Background.jpg");
+  background: url("https://img.freepik.com/premium-vector/digital-technology-concept-background_52683-35037.jpg?w=740");
   background-position: center;
   background-size: cover;
 }
 
 * { box-sizing: border-box;}
 A {text-decoration: none; color: white;} 
-img {image-resolution: 1080px;}
-
+img {vertical-align: middle;}
 /* --- Basic Element styling --- */
 
 h3 {
@@ -117,7 +116,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .bgimg-main {
-  background-image: url("Assets/bgimg1.jpg");
+  background-image: url("https://img.freepik.com/premium-vector/abstract-futuristic-wallpaper_23-2148398113.jpg?w=826");
   min-height: 100%;
   border: 5px solid #ffffff;
   border-style:groove;
@@ -210,7 +209,7 @@ html::-webkit-scrollbar-thumb {
     
     .caption span.border {
       background-color: #000000; /* Fallback color */
-      background-color: rgba(0,0,0, 0.25); /* Black w/opacity/see-through */
+      background-color: rgba(0,0,0, 0.35); /* Black w/opacity/see-through */
       -webkit-backdrop-filter:blur(15px) saturate(200%) brightness(75%);
       backdrop-filter: blur(15px) saturate(200%) brightness(75%);
       color: white; 
@@ -228,7 +227,14 @@ html::-webkit-scrollbar-thumb {
       text-align: center;
       font-size: 15px;
       font-size: 2vw;
-    }
+    animation: SpanShadow 3s ease infinite;
+  }
+
+  @keyframes SpanShadow {
+    0% {box-shadow: 0px 0px 10px #add;}
+    50% {box-shadow: 0px 0px 20px #add;}
+    100% {box-shadow: 0px 0px 10px #add;}
+  }
     
     .infoMain {
       position: absolute;
@@ -259,7 +265,17 @@ html::-webkit-scrollbar-thumb {
       border-style: groove;
       border-radius: 30px;
       transition: all 1s;
-          }
+      animation: InfoShadow 3s ease infinite;
+
+      }
+
+      @keyframes InfoShadow {
+        0% {box-shadow: 0px 0px 10px rgb(150, 150, 150);}
+        50% {box-shadow: 0px 0px 20px rgb(150, 150, 150);}
+        100% {box-shadow: 0px 0px 10px rgb(150, 150, 150);}
+      }
+
+
 
     .infoMain a {
       padding: 6px 8px 15px 15px;
@@ -284,6 +300,7 @@ html::-webkit-scrollbar-thumb {
           display: none;    
           padding: 100px 20px;
           height: 120%;
+          transition: all 3s;
         }
         
         #1 {background-color: #ffffff;}
@@ -316,9 +333,9 @@ html::-webkit-scrollbar-thumb {
           text-align: center; 
           color: #d1d1d1;
           font-size: 4.1vw; 
-          background-color: rgba(0, 0, 0, 0.75); 
-          -webkit-backdrop-filter:blur(15px) contrast(200%);
-          backdrop-filter: blur(15px) contrast(200%);
+          background-color: rgba(0, 0, 0, 0.35); 
+          -webkit-backdrop-filter:blur(15px);
+          backdrop-filter: blur(15px);
           border: 3px solid white;
           border-radius: 20px;
           width: fit-content;
@@ -458,7 +475,7 @@ html::-webkit-scrollbar-thumb {
       
       @media screen and (max-width: 850px) {
           .bg {
-          background-image: url("https://wallpaperaccess.com/full/2064677.png");
+          background-image: url("https://img.freepik.com/premium-vector/digital-technology-concept-background_52683-35037.jpg?w=740");
           background-position: center;
           background-size: cover;
         }
@@ -636,15 +653,21 @@ html::-webkit-scrollbar-thumb {
         flex: 25%;
         max-width: 35%;
         padding: 0 4px;
+        height: fit-content;
       }
 
       .column img {
         margin-top: 8px;
         vertical-align: middle;
-        width: 100%;
+        max-width: 100%;
         border-radius: 15px;
         box-shadow: 0px 0px 10px #000 ; 
       }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 
       @media screen and (max-width: 800px) {
         .column {
