@@ -7,6 +7,26 @@ function topnav() {
   }
 }
 
+function topnavFunction(){
+  document.getElementById("myTopnav").style.visibility = "visible";
+  document.getElementById("myTopnav").style.opacity = "1";
+
+  document.getElementById("ContentHP").style.visibility = "visible";
+  document.getElementById("ContentHP").style.opacity = "1";
+  
+  document.getElementById("myBlank").style.visibility = "hidden";
+  document.getElementById("myBlank").style.opacity = "0";
+
+  document.getElementById("loading").style.visibility = "hidden";
+  document.getElementById("loading").style.opacity = "0";
+
+}
+
+function ShowInfoMain(){
+  document.getElementById("myInfoMain").style.opacity = "1";
+
+}
+
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
