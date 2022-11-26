@@ -584,55 +584,6 @@ html::-webkit-scrollbar-thumb {
             
         }
 
-        .collapsible {
-        background-color: rgba(35, 35, 61, 0.75);
-        transition: background-color 1s, border-radius 0.95s;
-        color: white;
-        cursor: pointer;
-        padding: 20px;
-        width: 100%;
-        border: 2px solid white;
-        border-style: groove;
-        border-radius: 15px;
-        box-shadow: 2px 4px 10px #000000 inset;
-        text-align: center;
-        font-size: 2vw;
-        font-family: Arial Black;
-      }
-      
-      .active, .collapsible:hover {background-color: rgb(0, 0, 0, 0.75);}
-      .active {border-radius: 15px 15px 0 0;}
-
-      .collapsible:after {
-        content: '\02795';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-      }
-
-      .active:after {content: "\2796";}
-      
-      .content {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        font-family: Arial Black;
-        font-size: 2vw;
-        transition: max-height 0.2s ease-out;
-        background-color: rgb(241, 241, 241, 0.35);
-        box-shadow: -2px -4px 10px #000000 inset;
-        border-radius: 0 0 15px 15px;
-      }
-
-      @media screen and (max-width: 600px) {
-        .collapsible {font-size: 5vw;}
-        .content {font-size: 4vw;}
-        h3 {font-size: 4vw;}
-        ol {font-size: 4vw;}
-        p{font-size: 3.7vw;}
-      }
-
       .header {text-align: center; padding: 32px;}
 
       .row {
