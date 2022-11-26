@@ -11,26 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body class="bg" bgcolor="black">
-
+  <body class="bg" bgcolor="black" onload="ShowInfoMain()">
+    <div class="blank" id="myBlank"></div>
+    
+    <div id="loading">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f1055231234507.564a1d234bfb6.gif" alt="" width="100%">
+    </div>
    <!--Navigation-->
-   <div class="topnav" id="myTopnav" >
+   <div class="topnav" id="myTopnav" 
+   onmouseover="this.style.top = '2%';">
 
-      <a href="#1st-page" class="default" onclick="openPage('1', this, 'rgb(255, 255, 255)'), topnav()" style="transition: 0s; transform: scale(1);">
+      <a href="#1st-page" class="default" style="transition: 0s; transform: scale(1);">
         <canvas id="canvas1" width="96" height="96" class="activeMain" style=" transform: scale(1); padding-left: 0px;
         padding-right: 0px;background:transparent;"></canvas></a>
 
       <a href="#home" onclick="openPage('2', this, 'rgb(255, 255, 255)'), topnav()">
         <canvas id="canvas2" width="100" height="75" class="tabbuttons" ></canvas></a>
 
-      <a href="#Profile" onclick="openPage('3', this, 'red'), topnav()"> 
+      <a href="#Profile"> 
         <canvas id="canvas3" width="100" height="75" class="tabbuttons"></canvas></a>
 
-      <a href="#achievements" onclick="openPage('4', this, 'red'), topnav()"> 
-        <canvas id="canvas4" width="100" height="75" class="tabbuttons"></canvas></a>
+        <a href="#Art">
+          <canvas id="canvas5" width="100" height="75" class="tabbuttons"></canvas></a>
 
-      <a href="#Art" onclick="openPage('6', this, 'red'), topnav()">
-        <canvas id="canvas5" width="100" height="75" class="tabbuttons"></canvas></a>
+      <a href="#achievements"> 
+        <canvas id="canvas4" width="100" height="75" class="tabbuttons"></canvas></a>
 
     <!--Responsive-->
     <a href="javascript:void(0);" class="icon" style=" transform: rotate(0deg);" onclick="topnav()">
@@ -44,12 +49,6 @@
             x.classList.toggle("change");
           }
         </script></a>
-    </div>
-
-    <!--Sites navigator-->
-    <div class="site-nav" id="myTopnav" style="text-align: CENTER;">
-      <a href="#Sites" style="padding-top: 20px;" onclick="openPage('5', this, 'red'), topnav()"> 
-        <canvas id="canvas6" width="100" height="85"></a>
     </div>
 
     <script>        
@@ -77,11 +76,6 @@
         src: 'Rives/arts-tab.riv',
         canvas: document.getElementById("canvas5"),
         autoplay: true});
-
-        new rive.Rive({
-        src: 'Rives/sites-tab.riv',
-        canvas: document.getElementById("canvas6"),
-        autoplay: true});
     </script>
 
     <!--Content visibility-->
@@ -95,13 +89,13 @@
       <!--Welcome page-->
       <div id="1" class="tabcontent" style="display: block;"> <CENTER>
 
-          <div class="infoMain">
+          <div class="infoMain" id="myInfoMain">
             <span class="border" style="border-radius: 20px;">
               <img src="logo icons/Home.png" style="margin-top: 30px" width="110px" height="110px">   
-              <hr width="80%" style="border-style:double;" class="hrV">   <br>        
+             <br>        
               <p style="margin-top: -7.5px; color:#d1d1d1; font-weight: bolder;"><font size= 3vw;>The official Portfolio of Navaneet.J</font></p> 
               <center>
-                <a href="#Home" onclick="openPage('2', this, 'red')" > 
+                <a href="#Home" onclick="openPage('2', this, 'red'); topnavFunction()" > 
                   <button class="button" style="width:max-content;   background: linear-gradient(90deg, rgba(53, 0, 0, 0.75) 0%, rgba(0, 19, 83, 0.75) 75%); margin-bottom: 10px; margin-top: -10px; margin-left: 0;">Start the journey!</button>
                 </a>
               </center>  
@@ -109,37 +103,34 @@
           </div></CENTER></div>
 
       <!--Home/Introduction page-->
+      <div class="ContentHP" id="ContentHP">
       <div id="2" class="tabcontent">
-        <div class="bgimg-main">
+        <div class="bgimg-main" id="home">
           <br><br><br><br><br><br><br><br><br><br><br><br>
           <div class="caption">
             <span class="border" style="backdrop-filter: blur(7.5px), brightness(75%);">
-              <h3><font color="white" style="font-size: 3.5vw; letter-spacing: 0px; text-transform:none; padding-bottom: -20px;   font-weight: 700;">Welcome to my Portfolio</font></h3>    
+              <h3><font color="white" style="font-size: 3.5vw; letter-spacing: 0px; text-transform:none; padding-bottom: -20px;   font-weight: 700;">I AM NAVANEET</font></h3>    
             </span>
           </div>
         </div>
     
-        <div class="bggrd">
-          <div><h3 style="text-align:center; font-weight: 800;"> I'm Navaneet.J</h3></div>
+        <div class="bggrd" id="Profile">
           <div style="background-color:transparent;
           font-size: 3.7; -webkit-backdrop-filter:blur(15px) contrast(200%);
           backdrop-filter:blur(15px) saturate(200%)  brightness(25%); 
           padding: 20px; border-radius: 15px;">
-            <p>I'm currently to at my schooling and yep! have couple of other talents on my other side. My main passion is Drawing and Painting. This talent of mine is my peak! Coding and editing is even in my list, although yet to cross some steps to be a professional! Even I'm an enthusiast for sports. So I'm a good athlete, won many medals since my young ages! and much more...</p>
-            <center>
-              <a href="#Profile" onclick="openPage('3', this, 'red')"> <button class="button2" style="padding: 20px;">detailed profile</button></a> 
-            </center>      
+            <p>I'm <b>Navaneet.J</b>, A young ambicious teen groing his world! Currently to at my schooling... and have couple of other talents! My main passion is Drawing and Painting. This talent of mine is my peak! Mastering Color pencil, sketching, Perspectives and Charcoal. An intermediate in Watercolors and acrylic. Coding comes next. I'm mostly into Front-end. Even I'm an enthusiast for sports and Athletics would be at the top list.</p>   
           </div>
         </div>
 
-        <div class="bgimg-2">
+        <div class="bgimg-2" id="Art">
           <div class="caption">
             <span class="border" style="background-color:transparent; font-size:25px;
             color: black; font-size:2vw; -webkit-backdrop-filter:blur(15px) contrast(200%);
             backdrop-filter:blur(15px) saturate(200%)  brightness(25%);">
               <h3 style="text-align:center; color: rgb(231, 245, 255);">Art is my Peak!</h3>
               <center>
-                <a href="#Arts" onclick="openPage('6', this, 'red')"> <button class="button" style="width: auto; margin-bottom: 30px;">Check out</button></a> 
+                <a href="#Arts" id="myBtn"> <button class="button" style="width: auto; margin-bottom: 30px;">Check out</button></a> 
               </center>          
             </span>
           </div>
@@ -151,7 +142,7 @@
             <div style="background-color:transparent;
             font-size: 3.7; -webkit-backdrop-filter:blur(15px) contrast(150%);
             backdrop-filter:blur(15px) saturate(200%)  brightness(35%); 
-            padding: 20px; border-radius: 15px;">
+            padding: 20px; border-radius: 15px; width: 100%;">
               <center>
                 <h4 style="font-size: 19px; color: rgb(150, 255, 109);">A <b>platform game</b> more focused on an endless runner experience with levels. </h4>
                 <a href="https://navaneet239.github.io/AlienRunner/"> <button  class="button2" style="margin-bottom: 25px;">Play</button></a>  
@@ -160,9 +151,16 @@
           </div>
         </div>
     
-        <div class="bgimg-3">
+        <div class="bgimg-3" id="achievements">
           <div class="caption">
-            <span class="border" style="background-color:transparent;font-size: 3.8vw;color: #f7f7f7;  -webkit-backdrop-filter:blur(15px) contrast(200%); backdrop-filter:blur(15px) saturate(200%)  brightness(25%);"> There's way much to go! </span>
+            <span class="border" style="background-color:transparent; font-size:25px;
+            color: black; font-size:2vw; -webkit-backdrop-filter:blur(15px) contrast(200%);
+            backdrop-filter:blur(15px) saturate(200%)  brightness(25%);">
+              <h3 style="text-align:center; color: rgb(231, 245, 255);">My Awards</h3>
+              <center>
+                <a href="#Arts" id="myBtn2"> <button class="button" style="width: auto; margin-bottom: 30px;">Check out</button></a> 
+              </center>          
+            </span>
           </div>
         </div>
 
@@ -185,316 +183,95 @@
     
         <div class="bgimg-4">
           <div class="caption">
-            <span class="border" style="-webkit-backdrop-filter:blur(15px) contrast(200%); backdrop-filter:blur(15px) saturate(200%)  brightness(25%);">
-              <h1 style="font-size:3.7vw;">Time to go further!!</h1>
-              <div style="margin-bottom: 25px;">
-                <a href="#Profile" onclick="openPage('3', this, 'red')"> <button class="button2" style="padding: 15px;"> Next ▶</button></a></div>
-              </div>
+            <span class="border" style="-webkit-backdrop-filter:blur(15px) contrast(200%); backdrop-filter:blur(15px) saturate(200%)  brightness(25%); padding-bottom: -20px; ">
+              <h3><font color="white" style="font-size: 4.25vw; letter-spacing: 0px; text-transform:none; font-weight: 700;">THANK YOU</font></h3>  
+
+                <a href="https://github.com/navaneet239"><img src="Assets/Sites Icons/Github.png" alt="Github" width="30px" ></a>
+                <a href="https://www.instagram.com/nav_pj2309/"><img src="https://media.macosicons.com/parse/files/macOSicons/4b861a87491efcb1579167a1491b95df_low_res_Instagram.png" alt="instagram" width="30px"></a>
+                <a href="https://in.pinterest.com/NavPadJag/"><img src="https://media.macosicons.com/parse/files/macOSicons/7472f1ab60d45074c2ee1771bef04206_low_res_Pinterest.png" alt="pinterest" width="30px"></a>
+                <a href="https://open.spotify.com/user/r2n5niqigeto2gu5uisu0hh3p?si=8-2tD3N9Rui75en6evobcQ&nd=1"><img src="https://media.macosicons.com/parse/files/macOSicons/61aa949b77c5acd6532501d90256d172_low_res_Spotify.png" alt="Spotify" width="35px"></a>
+                <a href="https://www.bandlab.com/npj2309"><img src="Assets/Sites Icons/Bandlab.png" alt="BandLab" width="25px" style="border-radius: 8px;"></a>
+                <a href="https://www.reddit.com/user/npj2309/"><img src="https://media.macosicons.com/parse/files/macOSicons/8a3a09390634b8c7b38aefa215ff16ea_Reddit_Alt.png" alt="Reddit" width="30px"></a>
+
             </span>
           </div>
-          <center>
-            <div class="st" style="width: 100%; margin-top: 20px; overflow: hidden; padding-top: 28px;">
-              <div class="phV">
-              <img src="Assets/NPJ group of companies official logo (without background) -1.png" alt="NPJ logo" width="120px" style="float: left; margin-left: -20px; margin-top: -20px;" ></div>
-              <div style="float: right; font-size: 17px; margin-top: 5px;">Homepage © 2022 by Navaneet.J is licensed under <b><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 </a></b></div>
-          </div>
-          </center>
       </div>
-
-      <!--Basic Details page-->
-      <div id="3" class="tabcontent">
-        <div class="bgimg-main">
-          <br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="caption">
-          <span class="border">
-            <p><font color="white" >A bit more about me!</font></p>  
-          </span>
-        </div>
-        </div>
-        
-        <div style="color: rgba(255, 255, 255, 0.75);
-        background-color:rgba(0, 7, 29, 0.55);
-        -webkit-backdrop-filter:blur(15px);
-        backdrop-filter: blur(15px);
-        text-align:left; padding:35px 50px; border: 5px solid #ffffff; border-style:groove;border-bottom: none; border-top: none;">
-        <h3 style="text-align:center;color: rgba(204, 204, 204, 0.795);">Basic Information</h3>
-          <ol style="text-align: left; margin-left: -25px">
-            <li><strong>My Name: </strong>Navaneet.J</li>
-            <li><strong>Mom's name: </strong>Padma.J</li>
-            <li><strong>Dad's name: </strong>Jaggan.K</li>
-            <li><strong>Country: </strong>India</li>
-            <li><strong>Mother toungue: </strong>Tamil</li>
-          </ol>
-        </div>
-
-        <div style="position:relative;">
-          <div class="bggrd" style="border-radius: 0 0 25px 25px; text-align: justify; border: 5px solid #ffffff; border-style:groove; border-top: none; color: rgba(1, 0, 44, 0.75);">
-            <h3 style="text-align:center; ">Highlighting hobbies</h3>
-        
-            <button class="collapsible"><a style="  color:  rgba(255, 255, 255, 0.55);;
-              font-weight: 800;
-              -webkit-filter:drop-shadow(0px 0px 5px rgb(118, 150, 150));
-              filter: drop-shadow(0px 0px 5px rgb(128, 155, 155));
-              animation: h3Shadow 3s ease infinite;">Arts</a></button>
-            <div class="content"><p>
-                Graphite shading
-                <br>
-                Charcoal shading
-                <br>
-                Colour pencil shading
-                <br>
-                Watercolours
-                <br>
-                Acrilic
-                <br>
-                Craft work
-              </p>
-            </div>
-            <br>
-          <button class="collapsible"><a style="  color:  rgba(255, 255, 255, 0.55);;
-            font-weight: 800;
-            -webkit-filter:drop-shadow(0px 0px 5px rgb(118, 150, 150));
-            filter: drop-shadow(0px 0px 5px rgb(128, 155, 155));
-            animation: h3Shadow 3s ease infinite;">Sports</a></button>
-          <div class="content"><p>
-              Athletics
-              <br>
-              Gymnastics
-              <br>
-              Cricket
-              <br>
-              Badminton
-              <br>
-              Football
-              <br>
-            </p>
-          </div>
-          <br>
-          <button class="collapsible"><a style="  color:  rgba(255, 255, 255, 0.55);;
-            font-weight: 800;
-            -webkit-filter:drop-shadow(0px 0px 5px rgb(118, 150, 150));
-            filter: drop-shadow(0px 0px 5px rgb(128, 155, 155));
-            animation: h3Shadow 3s ease infinite;">Extras</a></button>
-          <div class="content"><p>
-              Coding
-              <br>
-              Gaming
-              <br>
-              Editing
-              <br>
-              Story/poem writng
-              <br>
-            </p>
-          </div>
-
-          <script>
-          var coll = document.getElementsByClassName("collapsible");
-          var i;
-
-          for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.maxHeight){
-                content.style.maxHeight = null;
-              } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-              } 
-            });
-          }
-          </script>
-          <br>
-          <CENTER>
-            <div style="        background-color:rgba(143, 143, 143, 0.35);  
-            padding: 20px 20px;
-            margin: 5px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-              <h3 style="color:rgb(242, 245, 255);">Awards Section</h3>
-
-              <a href="#Awards" onclick="openPage('4', this, 'red')"> <button class="button2" style="padding: 15px;"> Next tab ▶</button></a></div></CENTER></div>
-        </div>
-        <center>
-            <div class="st" style="width: 100%; margin-top: 20px; overflow: hidden; padding-top: 28px;">
-              <div class="phV">
-              <img src="Assets/NPJ group of companies official logo (without background) -1.png" alt="NPJ logo" width="120px" style="float: left; margin-left: -20px; margin-top: -20px;" ></div>
-              <div style="float: right; font-size: 17px; margin-top: 5px;">Homepage © 2022 by Navaneet.J is licensed under <b><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 </a></b></div>
-          </div>
-          </center>
+      <center>
+        <div class="st" style="width: 100%; margin-top: 20px; overflow: hidden; padding-top: 28px;">
+          <div class="phV">
+          <img src="Assets/NPJ group of companies official logo (without background) -1.png" alt="NPJ logo" width="120px" style="float: left; margin-left: -20px; margin-top: -20px;" ></div>
+          <div style="float: right; font-size: 17px; margin-top: 5px;">Homepage © 2022 by Navaneet.J is licensed under <b><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 </a></b></div>
+         </div>
+        </center>
       </div>
+    </div>
+    </div>
 
-      <!--Achivements page-->
-      <div id="4" class="tabcontent">
+    <!-- The Modal -->
+<div id="myModal" class="modal">
 
-        <div style="position:relative;">
-          <div style="color:#ddd;
-          background-color:rgb(0, 0, 0, 0.45);  -webkit-backdrop-filter:blur(15px) ; backdrop-filter: blur(15px) ;
-          box-shadow: 2px 4px 10px rgb(0, 0, 0) inset; border:  solid white;
-          border-style: double;
-          padding:50px 80px; text-align: justify; border-radius: 25px;">  
-            <h3 style="text-align: center; font-size: 4vw; color:rgb(242, 245, 255);"> <i class="fa fa-fw fa-trophy"></i>Awards</h3>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>   <br> 
+      <h3 style="text-align: center; font-size: 4vw; color:rgb(242, 245, 255);"> <i class="fa fa-fw fa-pencil"></i> My Arts</h3>
+      <div class="row" > 
+        <div class="column">
+          <img src="Assets/Arts/art1.png" style="width:100%">
+          <img src="Assets/Arts/art2.jpg" style="width:100%">
+          <img src="Assets/Arts/art3.jpg" style="width:100%">
+          <img src="Assets/Arts/art8.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="Assets/Arts/art19.jpg" style="width:100%">
+          <img src="Assets/Arts/art5.jpg" style="width:100%">
+          <img src="Assets/Arts/art6.jpg" style="width:100%">
+          <img src="Assets/Arts/art7.jpg" style="width:100%">
+          <img src="Assets/Arts/art11.jpg" style="width:100%">
+        </div>  
+        <div class="column">
+          <img src="Assets/Arts/Expo-2019.jpg" style="width:100%">
+          <img src="Assets/Arts/Expo-2022.jpg" style="width:100%">
+          <img src="Assets/Arts/art15.jpg" style="width:100%">
+          <img src="Assets/Arts/art9.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="Assets/Arts/art16.jpg" style="width:100%">
+          <img src="Assets/Arts/art17.jpg" style="width:100%">
+          <img src="Assets/Arts/art18.jpg" style="width:100%">
+          <img src="Assets/Arts/art14.jpg" style="width:100%">
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="myModal2" class="modal2">
+
+      <!-- Modal content -->
+      <div class="modal-content2">
+        <span class="close2">&times;</span>   <br> 
+        <h3 style="text-align: center; font-size: 4vw; color:rgb(242, 245, 255);"> <i class="fa fa-fw fa-trophy"></i>Awards</h3>
             
-            <div class="row" > 
-              <div class="column">
-                <img src="Assets/Awards/2017.jpg" style="width:100%">
-                <img src="Assets/Awards/2.jpg" style="width:100%">
-                <img src="Assets/Awards/3.png" style="width:100%">
-                <img src="Assets/Awards/4.png" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="Assets/Awards/2017_2.jpg" style="width:100%">
-                <img src="Assets/Awards/2017_3.jpg" style="width:100%">
-                <img src="Assets/Awards/2019.jpg" style="width:100%">
-                <img src="Assets/Awards/5.png" style="width:100%">
-              </div>  
-              <div class="column">
-                <img src="Assets/Awards/IMG-20211224-WA0025.jpg" style="width:100%">
-                <img src="Assets/Awards/IMG-20211224-WA0027.jpg" style="width:100%">
-                <img src="Assets/Awards/IMG-20211224-WA0032.jpg" style="width:100%">
-                <img src="Assets/Awards/6.png" style="width:100%">
-              </div>
-            </div> <br> <CENTER>
-              <div style="        background-color:rgba(194, 194, 194, 0.15);  
-              padding: 20px 20px;
-              margin: 5px;
-              border-radius: 15px;
-              box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-                <h3 style="color:rgb(242, 245, 255);">Art Section</h3>
-                <a href="#Art" onclick="openPage('6', this, 'red')"> <button class="button2" style="padding: 15px;"> Next tab ▶</button></a>
-              </div></CENTER>
+        <div class="row" > 
+          <div class="column">
+            <img src="Assets/Awards/2017.jpg" style="width:100%">
+            <img src="Assets/Awards/2.jpg" style="width:100%">
+            <img src="Assets/Awards/3.png" style="width:100%">
+            <img src="Assets/Awards/4.png" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Assets/Awards/2017_2.jpg" style="width:100%">
+            <img src="Assets/Awards/2017_3.jpg" style="width:100%">
+            <img src="Assets/Awards/2019.jpg" style="width:100%">
+            <img src="Assets/Awards/5.png" style="width:100%">
+          </div>  
+          <div class="column">
+            <img src="Assets/Awards/IMG-20211224-WA0025.jpg" style="width:100%">
+            <img src="Assets/Awards/IMG-20211224-WA0027.jpg" style="width:100%">
+            <img src="Assets/Awards/IMG-20211224-WA0032.jpg" style="width:100%">
+            <img src="Assets/Awards/6.png" style="width:100%">
           </div>
         </div>
-        <center>
-          <div class="st" style="width: 100%; margin-top: 20px; overflow: hidden; padding-top: 28px;">
-            <div class="phV">
-            <img src="Assets/NPJ group of companies official logo (without background) -1.png" alt="NPJ logo" width="120px" style="float: left; margin-left: -20px; margin-top: -20px;" ></div>
-            <div style="float: right; font-size: 17px; margin-top: 5px;">Homepage © 2022 by Navaneet.J is licensed under <b><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 </a></b></div>
         </div>
-          </center>
-      </div>
-    
-      <!--Social links page-->
-      <div id="5" class="tabcontent"><CENTER><br>
-            <div style="color:#ddd;
-            background-color:rgb(0, 0, 0, 0.45);  -webkit-backdrop-filter:blur(15px) ; backdrop-filter: blur(15px) ;
-          box-shadow: 2px 4px 10px rgb(0, 0, 0) ;box-shadow: 2px 4px 10px rgb(0, 0, 0) inset; 
-            border:  solid white; border-style: groove; width: fit-content;
-            padding-top: 10px; padding-bottom:20px;
-            padding-left: 35px; padding-right: 35px; border-radius: 25px;">
-        <br>
-        <div class="st" style="margin-bottom: 35px;">
-          <font color= "white"><i class="fa fa-fw fa-globe"></i> Social Platforms</font>
-        </div> 
-            
-            <div class="container2" style="background-color:rgba(194, 194, 194, 0.15);  
-            padding: 5px; margin: 5px; border-radius: 15px; box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-              <h3 style="color:rgb(242, 245, 255);">
-              <img src="Assets/Sites Icons/Github.png" alt="Github" style="width:95%">
-              <a href="https://github.com/navaneet239"><button class="btn">Github profile</button></a>
-            </div>  <br><br>
-
-            <div class="container2" style="background-color:rgba(194, 194, 194, 0.15);  
-            padding: 5px; margin: 5px; border-radius: 15px; box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-              <h3 style="color:rgb(242, 245, 255);">
-              <img src="https://media.macosicons.com/parse/files/macOSicons/4b861a87491efcb1579167a1491b95df_low_res_Instagram.png" alt="Instagram" style="width:95%">
-              <a href="https://www.instagram.com/nav_pj2309/"><button class="btn">Instagram profile</button></a>
-            </div> <br><br>
-
-            <div class="container2" style="background-color:rgba(194, 194, 194, 0.15);  
-            padding: 5px; margin: 5px; border-radius: 15px; box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-              <h3 style="color:rgb(242, 245, 255);">
-              <img src="https://media.macosicons.com/parse/files/macOSicons/7472f1ab60d45074c2ee1771bef04206_low_res_Pinterest.png" alt="Pinterest" style="width:95%">
-              <a href="https://in.pinterest.com/NavPadJag/"><button class="btn">Pinterest profile</button></a>
-            </div>  <br><br>
-
-            <div class="container2" style="background-color:rgba(194, 194, 194, 0.15);  
-            padding: 5px; margin: 5px; border-radius: 15px; box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-              <h3 style="color:rgb(242, 245, 255);">
-              <img src="https://media.macosicons.com/parse/files/macOSicons/61aa949b77c5acd6532501d90256d172_low_res_Spotify.png" alt="Spotify" style="width:95%">
-              <a href="https://open.spotify.com/user/r2n5niqigeto2gu5uisu0hh3p?si=8-2tD3N9Rui75en6evobcQ&nd=1"><button class="btn">Spotify profile</button></a>
-            </div>  <br><br>
-
-            <div class="container2" style="background-color:rgba(194, 194, 194, 0.15);  
-            padding: 5px; margin: 5px; border-radius: 15px; box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-              <h3 style="color:rgb(242, 245, 255);">
-              <img src="Assets/Sites Icons/Bandlab.png" alt="Bandlab" style="width:80%; border-radius: 75px;">
-              <a href="https://www.bandlab.com/npj2309"><button class="btn">Bandlab profile</button></a>
-            </div>  <br><br>
-
-            <div class="container2" style="background-color:rgba(194, 194, 194, 0.15);  
-            padding: 5px; margin: 5px; border-radius: 15px; box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-              <h3 style="color:rgb(242, 245, 255);">
-              <img src="https://media.macosicons.com/parse/files/macOSicons/8a3a09390634b8c7b38aefa215ff16ea_Reddit_Alt.png" alt="Bandlab" style="width:95%; border-radius: 75px;">
-              <a href="https://www.reddit.com/user/npj2309/"><button class="btn">Reddit profile</button></a>
-            </div>  <br><br>
-          </div>
-        </CENTER>
-        <center>
-          <div class="st" style="width: 100%; margin-top: 20px; overflow: hidden; padding-top: 28px;">
-            <div class="phV">
-            <img src="Assets/NPJ group of companies official logo (without background) -1.png" alt="NPJ logo" width="120px" style="float: left; margin-left: -20px; margin-top: -20px;" ></div>
-            <div style="float: right; font-size: 17px; margin-top: 5px;">Homepage © 2022 by Navaneet.J is licensed under <b><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 </a></b></div>
-        </div>
-          </center>
-      </div>
-
-      <!--Art page-->
-      <div id="6" class="tabcontent">
-        <div style="position:relative;">
-          <div style="color:#ddd;
-          background-color:rgb(0, 0, 0, 0.45);  -webkit-backdrop-filter:blur(15px) ; backdrop-filter: blur(15px) ;
-          box-shadow: 2px 4px 10px rgb(0, 0, 0) ;
-          box-shadow: 2px 4px 10px rgb(0, 0, 0) inset;  border:  solid white;
-          border-style: double; text-align:center;
-          padding:50px 80px; text-align: justify;  border-radius: 25px;">
-          
-            <h3 style="text-align: center; font-size: 4vw; color:rgb(242, 245, 255);"> <i class="fa fa-fw fa-pencil"></i> My Arts</h3>
-            <div class="row" > 
-              <div class="column">
-                <img src="Assets/Arts/art1.png" style="width:100%">
-                <img src="Assets/Arts/art2.jpg" style="width:100%">
-                <img src="Assets/Arts/art3.jpg" style="width:100%">
-                <img src="Assets/Arts/art8.jpg" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="Assets/Arts/art19.jpg" style="width:100%">
-                <img src="Assets/Arts/art5.jpg" style="width:100%">
-                <img src="Assets/Arts/art6.jpg" style="width:100%">
-                <img src="Assets/Arts/art7.jpg" style="width:100%">
-                <img src="Assets/Arts/art11.jpg" style="width:100%">
-              </div>  
-              <div class="column">
-                <img src="Assets/Arts/Expo-2019.jpg" style="width:100%">
-                <img src="Assets/Arts/Expo-2022.jpg" style="width:100%">
-                <img src="Assets/Arts/art15.jpg" style="width:100%">
-                <img src="Assets/Arts/art9.jpg" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="Assets/Arts/art16.jpg" style="width:100%">
-                <img src="Assets/Arts/art17.jpg" style="width:100%">
-                <img src="Assets/Arts/art18.jpg" style="width:100%">
-                <img src="Assets/Arts/art14.jpg" style="width:100%">
-              </div>
-            </div>
-            <CENTER style="margin-top: 45px">
-              <div style="background-color:rgba(194, 194, 194, 0.15);  
-              padding: 20px 20px; margin: 5px;
-              border-radius: 15px; box-shadow: 0px 0px 10px rgb(136, 136, 136) ; ">
-                <h3 style="color:rgb(242, 245, 255);">Social platform Section</h3>
-                <a href="#Sites" onclick="openPage('5', this, 'red')"> <button class="button2" style="padding: 15px;"> Next tab ▶</button></a>
-              </div>
-            </CENTER>
-          </div>
-        </div>
-          <center>
-            <div class="st" style="width: 100%; margin-top: 20px; overflow: hidden; padding-top: 28px;">
-              <div class="phV">
-              <img src="Assets/NPJ group of companies official logo (without background) -1.png" alt="NPJ logo" width="120px" style="float: left; margin-left: -20px; margin-top: -20px;" ></div>
-              <div style="float: right; font-size: 17px; margin-top: 5px;">Homepage © 2022 by Navaneet.J is licensed under <b><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 </a></b></div>
-          </div>
-            </center>
-        </div>
-      </div>
     </div>
 
     <script>
@@ -502,9 +279,43 @@
 
       window.onscroll = function MobScroll() {
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) { document.getElementById("myTopnav").style.top = "1%"; }
-        else { document.getElementById("myTopnav").style.top = "-110px"; }
+        if (prevScrollpos > currentScrollPos) { 
+          document.getElementById("myTopnav").style.top = "2%"; 
+        }
+        else { 
+          document.getElementById("myTopnav").style.top = "-105px"; 
+        }
         prevScrollpos = currentScrollPos;
+      }
+
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function() {
+        modal.style.visibility = "visible";
+        modal.style.opacity = "1";
+
+      }
+
+      span.onclick = function() {
+        modal.style.visibility = "hidden";
+        modal.style.opacity = "0";      
+      }
+
+      var modal2 = document.getElementById("myModal2");
+      var btn2 = document.getElementById("myBtn2");
+      var span2 = document.getElementsByClassName("close2")[0];
+
+      btn2.onclick = function() {
+        modal2.style.visibility = "visible";
+        modal2.style.opacity = "1";
+
+      }
+
+      span2.onclick = function() {
+        modal2.style.visibility = "hidden";
+        modal2.style.opacity = "0";      
       }
     </script>
   </body></html>
