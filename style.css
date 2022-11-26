@@ -20,8 +20,9 @@ img {vertical-align: middle;}
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 4vw , sans-serif, bold;
+  font: sans-serif, bold;
   color: rgb(42, 44, 51);
+  font-size: 4.5vh;
   font-weight: 800;
   -webkit-filter:drop-shadow(0px 0px 5px #add);
   filter: drop-shadow(0px 0px 5px #add);
@@ -53,7 +54,7 @@ html::-webkit-scrollbar-thumb {
 
 .button {
   position: relative;
-  background: rgba(85, 85, 85, 0.25);
+  background: rgba(85, 85, 85, 0.35);
   -webkit-backdrop-filter:blur(15px) contrast(200%);
   backdrop-filter: blur(15px) contrast(200%);
   top: 5px; width: 100px;
@@ -218,7 +219,7 @@ html::-webkit-scrollbar-thumb {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 2;
-      width: 65%;
+      width: 85%;
       padding: 20px;
       text-align: center;
       font-size: 15px;
@@ -242,15 +243,6 @@ html::-webkit-scrollbar-thumb {
     visibility: visible;
     opacity: 1;
     transition: all 1s ease-out;
-}
-
-#loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: visible; opacity: 1;
-  transition: all 0.5s;
 }
     
     .infoMain {
@@ -277,7 +269,6 @@ html::-webkit-scrollbar-thumb {
       border: 5px solid #f1f1f1;
       border-style: groove;
       border-radius: 30px;
-      opacity: 0;
       transition: all 1s;
       animation: InfoShadow 3s ease infinite;
 
@@ -476,71 +467,14 @@ html::-webkit-scrollbar-thumb {
         #visibility {display: none;}
         .phV {display: none;}
         .hrV {display: block;}
-        .site-nav {display:none;}
-        .topnav a:not(:first-child) {display: none;}
-        .mySidenav a {display: none;}
-
-        .topnav a.icon {float: right; display: block; padding-top: 35px;}
-
-          .topnav {
-            overflow: hidden;
-            background:  linear-gradient(90deg, rgba(61, 0, 0, 0.25) 0%, rgba(0, 17, 75, 0.25) 100%);
-            -webkit-backdrop-filter: blur(10px) ;
-            backdrop-filter: blur(10px) ;
-            z-index: 199;
-            width: 92.5%;
-            height: max-content;
-            border-radius: 20px;
-            position:fixed;
-            padding-top: 5px;
-            padding-bottom: 1px;
-            padding-left: 5px;
-            padding-right: 0px;
-            top: 2%;
-            left: 4%;
-            -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-            vertical-align: middle;
-            transition: 0.5s;
-          }
-        
-          .topnav a {
-            float: none;
-            align-content: center;
-            margin-right: 0px; margin-top: 0px;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-          }
-          
-          .topnav a:hover {
-            -webkit-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
-          }
-        
-          .topnav .activeMain {
-            width: fit-content;
-            -webkit-transform: scale(1); 
-            transform: scale(1); 
-            margin-left: 0px; margin-top: 0px;
-            transition: all 0s;
-          }      
-            
-          .topnav .tabbuttons {
-            float: none; margin-right: 0px; margin-left: 0px; margin-top: 0px;
-          }
-
-          .tab{font-size: 10px;}
-        
-          .topnav + .tab {
-            float: right;
-            display: none;}
+          .topnav {display: none;}
+  
         
           div.main {
             margin-left: 0; 
             margin-top: -2.5%; padding: 0px 0px; 
-            -webkit-transform: translateY(65px);
-            transform: translateY(65px);
+            -webkit-transform: translateY(50px);
+            transform: translateY(50px);
           }
         
           .infoMain{top: 50%; left: 12%; transform:translate(-12% -50%); width: 75%;}
