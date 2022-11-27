@@ -1,52 +1,48 @@
-function topnav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-function topnavFunction(){
-  document.getElementById("myTopnav").style.visibility = "visible";
-  document.getElementById("myTopnav").style.opacity = "1";
-
-  document.getElementById("ContentHP").style.visibility = "visible";
-  document.getElementById("ContentHP").style.opacity = "1";
-  
-  document.getElementById("myBlank").style.visibility = "hidden";
-  document.getElementById("myBlank").style.opacity = "0";
-
-  document.getElementById("loading").style.visibility = "hidden";
-  document.getElementById("loading").style.opacity = "0";
-
-}
-
-function ShowInfoMain(){
-  document.getElementById("myInfoMain").style.opacity = "1";
-
-}
-
-function openPage(pageName, elmnt, color) {
-  // Hide all elements with class="tabcontent" by default */
+function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
-// Remove the background color of all tablinks/buttons
-tablinks = document.getElementsByClassName("header");
-for (i = 0; i < tablinks.length; i++) {
-  tablinks[i].style.backgroundColor = "";
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  document.getElementById("navbar").style.padding = "17px 10px";
+  document.getElementById("navbar").style.top = "0.5%";
+  document.getElementById("navbar").style.scale = "0.95";
+  document.getElementById("ShowSB").style.scale = "0.75";
+
+  document.getElementById("logo").style.fontSize = "25px";
+} else {
+  document.getElementById("navbar").style.padding = "30px 10px";
+  document.getElementById("navbar").style.top = "2%";
+  document.getElementById("navbar").style.scale = "1";
+  document.getElementById("ShowSB").style.scale = "1";
+
+  document.getElementById("logo").style.fontSize = "35px";
+}
 }
 
-// Show the specific tab content
-document.getElementById(pageName).style.display = "block";
-
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.visibility = "visible";
 
 }
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.visibility = "hidden";
+}
