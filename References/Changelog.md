@@ -85,7 +85,7 @@
 ### Code name: Modern Era
 ![stage 11](https://user-images.githubusercontent.com/74445713/205135189-3636d348-c4b6-4706-9d60-6540aadb9026.png)
 
-- ** COMPLETE OVERHAUL!! ** Switched the website theme to a modern and elegant look
+- **COMPLETE OVERHAUL!!** Switched the website theme to a modern and elegant look
 - Retained the Blur theme as a switchable theme
 - Connected stylesheets, resources and scripts from [webflow.com](https://www.webflow.com)
 - Interface tweaks and fixes was been done in a bulk
