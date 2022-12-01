@@ -78,14 +78,14 @@
 ### Code name: Easy Nav
 ![stage 10](https://user-images.githubusercontent.com/74445713/205134972-ea1c1f05-4038-43de-b0d3-2222a3d353d4.png)
 
-- Singled the navigation by merging all the 4 tabs into one for easy navigation
+- Singled the navigation by merging all the 5 tabs into one for easy navigation
 - Interface tweaks and fixes was been done in a bulk
 
 ## v4.0
 ### Code name: Modern Era
 ![stage 11](https://user-images.githubusercontent.com/74445713/205135189-3636d348-c4b6-4706-9d60-6540aadb9026.png)
 
-- **COMPLETE OVERHAUL!!** Switched the website theme to a modern and elegant look
+- **COMPLETE OVERHAUL!!** Switched the website theme to a modern, clean and elegant look
 - Retained the Blur theme as a switchable theme
 - Connected stylesheets, resources and scripts from [webflow.com](https://www.webflow.com)
 - Interface tweaks and fixes was been done in a bulk
