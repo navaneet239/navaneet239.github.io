@@ -1,268 +1,105 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="logo icons/Home.ico"/><title>Homepage | Blur UI</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Blur UI</title>
+    <link href="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/63851416a85e7918eaee36b8_aem4g-m8ba8-001.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/638778432dfd059beececd18_Uiconstock-Dynamic-Flat-Android-Home.ico" rel="apple-touch-icon"/>
 
-<link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/@rive-app/canvas@1.0.65"></script>
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+        body{
+            background: url('https://img.freepik.com/premium-vector/digital-technology-concept-background_52683-35037.jpg?w=740');
+            background-size: cover;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+        }
 
-<div class="tab" id="navbar">
-    <a href="#1st-page" href="#default" id="logo">
-        <canvas id="canvas1" width="96" height="96"></canvas></a>
-    <div id="navbar-right">
-        <button class="tablinks"  style="margin-top: -10px;" id="ShowSB"><span style="cursor:pointer; " onclick="openNav()">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAA/ElEQVRoge2WPU4DMRCF3/yAQpMuSORuhFuAaGCV3GQ5U44AF4CGCI9pbMUuSBdk0PskFztejb+RtasHEEIIIX8YaR8m7C/VF7twvQ3DTZgguSCsLAfCBMkE4YIwlHqpGUq91o77tUcqPaLpkbp30PQ7nhkX8valeMGnP+0nOVRn76bxxTZc76vYMPIuSCrrbPIQy8gAHquztgNk182Q8n3trnXuBghDHlweySR+HCCrzoPLIwNz69x9A/b+8XxYLRGGTTjWg8m/ZmC+usZ04qdECCG/DLMQsxCzUHsDzEJnlWcWIoQMCLMQsxCzUHsDzEJnlWcWIoQQ8v/4BlpbJpVtKsuXAAAAAElFTkSuQmCC"
-            width="40px"></span></button>
-    </div>
-</div>
-<div id="mySidenav" class="sidenav">
-    <button  class="closebtn" onclick="closeNav()" style="transform: translate(0) scale(1); 
-    background: none; border: none; color: #818181;">&times;</button>
-    <br style="margin-bottom: 10px;">
-    <a href="#home" onclick="openCity(event, 'London')" id="defaultOpen">
-        <canvas id="canvas2" width="100" height="75" class="tabbuttons" ></canvas></a>
+        div {
+            display: flex;
+            backdrop-filter: blur(45px) contrast(150%);
+            width: 60%;
+            height: 60%;
+            padding: 40px;
+            text-align: center;
+            font-weight: 600;
+            border: 5px solid #ccc ;
+            border-radius: 15px;
+            border-style: groove;
+            position: absolute;
+            top: 50%; left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
 
-      <a href="#Profile"> 
-        <canvas id="canvas3" width="100" height="75" class="tabbuttons"></canvas></a>
+        @media screen and (max-width: 815px) {
+            div{padding: 10px; width: 90%; height: 80%;}
+        }
 
-        <a href="#Art">
-          <canvas id="canvas5" width="100" height="75" class="tabbuttons"></canvas></a>
+        a{text-decoration: none;}
+        h1{font-size: 2em; margin-bottom: 10px;}
+        p{margin-bottom: 10px; line-height: 2;}
 
-      <a href="#achievements"> 
-        <canvas id="canvas4" width="100" height="75" class="tabbuttons"></canvas></a>
-</div>
+        span{
+            position: absolute;
+            top: 50%; left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 85%;
+        }
 
-<script>        
-    new rive.Rive({
-      src: 'Rives/Home.riv',
-      canvas: document.getElementById("canvas1"),
-      autoplay: true});
-  
-    new rive.Rive({
-      src: 'Rives/Home-tab.riv',
-      canvas: document.getElementById("canvas2"),
-      autoplay: true});
+        
+        button {
+            position: relative;
+            background: rgba(85, 85, 85, 0.35);
+            -webkit-backdrop-filter:blur(15px) contrast(200%);
+            backdrop-filter: blur(15px) contrast(200%);
+            width: 200px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 1.5s;  
+            color: #FFFFFF;
+            padding:20px; font-weight: 600;
+            text-decoration: none;
+            overflow: hidden;
+            box-shadow: 2px 4px 5px #000 inset;}
+        
+        button:hover{
+            box-shadow: 0px 0px 50px #000 inset;
+            background: linear-gradient(-45deg, rgba(7, 126, 17, 0.75), rgba(187, 32, 32, 0.75), rgba(20, 135, 177, 0.75), rgba(9, 5, 61, 0.75));
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+            border-radius: 20px;
+        }
 
-    new rive.Rive({
-      src: 'Rives/profile-tab.riv',
-      canvas: document.getElementById("canvas3"),
-      autoplay: true});
+        button:active{scale: 0.90;}
 
-    new rive.Rive({
-      src: 'Rives/awards-tab.riv',
-      canvas: document.getElementById("canvas4"),
-      autoplay: true});
-
-    new rive.Rive({
-      src: 'Rives/arts-tab.riv',
-      canvas: document.getElementById("canvas5"),
-      autoplay: true});
-  </script>
-
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+    </style>
 </head>
-<body class="bg" bgcolor="black">
-    
-    <div id="main">
-        <div id="London" class="tabcontent" >
-                <div class="bgimg-1" id="home">
-                  <div class="caption">
-                  <span class="border">
-                   <p style="margin-bottom: -10px;"> I AM NAVANEET</p>
-                    <p style="margin-top: -10px; color:#d1d1d1; font-weight: bolder;"><font size= 3vw;>- Official Portfolio -</font></p>
-                    </span>
-                  </div>
-                </div>
-                
-                <div class="bggrd" id="Profile">
-                    <div style="background-color:transparent;
-                    font-size: 18px; -webkit-backdrop-filter:blur(15px) contrast(200%);
-                    backdrop-filter:blur(15px) saturate(200%)  brightness(25%); 
-                    padding: 20px; border-radius: 15px;">
-                      <p>I'm <b>Navaneet.J</b>, a young ambitious teen growing his world! Currently to at my schooling... and have couple of other talents! My main passion is Drawing and Painting. This talent of mine is my peak! Mastering Color pencil, sketching, Perspectives and Charcoal. An intermediate in Watercolors and acrylic. Coding comes next. I&#x27;m mostly into Front-end. Even I&#x27;m an enthusiast for sports and Athletics would be at the top list.</p>   
-                    </div>
-                  </div>
-                
-                <div class="bgimg-2" id="Art">
-                  <div class="caption">
-                  <span class="border" >
-                    ART IS MY PEAK
-                    <center>
-                        <a href="#arts" id="myBtn"> <button class="button" style="width: auto; margin-bottom: 30px; ">Check out</button></a> 
-                      </center>    
-                  </span>
-                  </div>
-                </div>
-                
-                <div style="position:relative;">
-                    <div class="gameGrd">
-                        <center>
-                        <div style=" color: rgb(132, 255, 138);font: sans-serif, bold;
-                        font-weight: 800;">Alien Runner</div>
-                        <div style="background-color:transparent;
-                        font-size: 3.7; -webkit-backdrop-filter:blur(15px) contrast(150%);
-                        backdrop-filter:blur(15px) saturate(200%)  brightness(35%); 
-                        padding: 20px; border-radius: 15px; width: 100%;">
-                            <h4 style="font-size: 19px; color: rgb(150, 255, 109);">A <b>platform game</b> more focused on an endless runner experience with levels. </h4>
-                            <a href="https://navaneet239.github.io/AlienRunner/"> <button  class="button" style="margin-bottom: 25px;">Play</button></a>  
-                          </center>  
-                        </div>
-                </div>
-                
-                <div class="bgimg-3" id="achievements">
-                  <div class="caption">
-                  <span class="border">
-                        My Awards
-                        <center>
-                        <a href="#Awards" id="myBtn2"> <button class="button" style="width: auto; margin-bottom: 30px;">Check out</button></a> 
-                        </center>      
-                    </span>
-                  </div>
-                </div>
-                
-                <div style="position:relative;">
-                    <div class="WinGrd">
-                        <div style="text-align:center; color: rgb(255, 211, 129); font: sans-serif, bold;
-                        font-weight: 800;">Windows Ripen</div>
-                        <div style="background-color:transparent;
-                        font-size: 3.7; -webkit-backdrop-filter:blur(15px) contrast(150%);
-                        backdrop-filter:blur(15px) saturate(200%)  brightness(55%); 
-                        padding: 20px; border-radius: 15px;">
-                          <center>
-                            <h4 style="font-size: 19px; color: rgb(255, 210, 125);">An open source <b>concept</b> based on the Windows OS</h4>
-
-                            <iframe class="iframe" src="https://www.youtube.com/embed/pv3JDbGqEm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            
-                            <a href="https://navaneet239.github.io/WinRipen/"> <button  class="button2" id="WRbtn" style="padding: 17px">Check out!</button></a>  
-                          </center> 
-                        </div> 
-                      </div>
-                </div>
-                
-                <div class="bgimg-4">
-                  <div class="caption">
-                  <span class="border">THANK YOU
-                    <br>
-                    <a href="https://github.com/navaneet239"><img src="Assets/Sites Icons/Github.png" alt="Github" width="30px" ></a>
-                    <a href="https://www.instagram.com/nav_pj2309/"><img src="https://media.macosicons.com/parse/files/macOSicons/4b861a87491efcb1579167a1491b95df_low_res_Instagram.png" alt="instagram" width="30px"></a>
-                    <a href="https://in.pinterest.com/NavPadJag/"><img src="https://media.macosicons.com/parse/files/macOSicons/7472f1ab60d45074c2ee1771bef04206_low_res_Pinterest.png" alt="pinterest" width="30px"></a>
-                    <a href="https://open.spotify.com/user/r2n5niqigeto2gu5uisu0hh3p?si=8-2tD3N9Rui75en6evobcQ&nd=1"><img src="https://media.macosicons.com/parse/files/macOSicons/61aa949b77c5acd6532501d90256d172_low_res_Spotify.png" alt="Spotify" width="30px"></a>
-                    <a href="https://www.bandlab.com/npj2309"><img src="Assets/Sites Icons/Bandlab.png" alt="BandLab" width="30px" style="border-radius: 8px;"></a>
-                    <a href="https://www.reddit.com/user/npj2309/"><img src="https://media.macosicons.com/parse/files/macOSicons/8a3a09390634b8c7b38aefa215ff16ea_Reddit_Alt.png" alt="Reddit" width="30px"></a>
-                  </span>
-                  </div>
-                </div>
-
-                <center>
-                    <div class="st" style="width: 100%; margin-top: 20px; overflow: hidden; padding-top: 28px;">
-                      <div class="phV">
-                      <img src="Assets/NPJ group of companies official logo (without background) -1.png" alt="NPJ logo" width="120px" style="float: left; margin-left: -20px; margin-top: -20px;" ></div>
-                      <div style="float: right; font-size: 17px; margin-top: 5px;">Homepage © 2022 by Navaneet.J is licensed under <b><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 </a></b></div>
-                     </div>
-                    </center>
-        </div>
+<body>
+    <div>
+        <span>
+            <h1>The Legacy Version is Shutted down.</h1>
+            <p>The Legacy version of the Homepage (Code Named as <b>Blur UI</b>) has been shutted down and would be permanently removed shortly.</p>
+            <a href="https://navaneet239.github.io"><button>Return Home</button></a>
+        </span>
     </div>
-
-       <!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>   <br> 
-        <h3 style="text-align: center; font-size: 4.5vw; color:rgb(242, 245, 255); font: sans-serif, bold;
-        font-weight: 800;">My Arts</h3>
-        <div class="row" > 
-          <div class="column">
-            <img src="Assets/Arts/art1.png" style="width:100%">
-            <img src="Assets/Arts/art2.jpg" style="width:100%">
-            <img src="Assets/Arts/art3.jpg" style="width:100%">
-            <img src="Assets/Arts/art8.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="Assets/Arts/art19.jpg" style="width:100%">
-            <img src="Assets/Arts/art5.jpg" style="width:100%">
-            <img src="Assets/Arts/art6.jpg" style="width:100%">
-            <img src="Assets/Arts/art7.jpg" style="width:100%">
-            <img src="Assets/Arts/art11.jpg" style="width:100%">
-          </div>  
-          <div class="column">
-            <img src="Assets/Arts/Expo-2019.jpg" style="width:100%">
-            <img src="Assets/Arts/Expo-2022.jpg" style="width:100%">
-            <img src="Assets/Arts/art15.jpg" style="width:100%">
-            <img src="Assets/Arts/art9.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="Assets/Arts/art16.jpg" style="width:100%">
-            <img src="Assets/Arts/art17.jpg" style="width:100%">
-            <img src="Assets/Arts/art18.jpg" style="width:100%">
-            <img src="Assets/Arts/art14.jpg" style="width:100%">
-          </div>
-        </div>
-        </div>
-      </div>
-  
-      <div id="myModal2" class="modal2">
-  
-        <!-- Modal content -->
-        <div class="modal-content2">
-          <span class="close2">&times;</span>   <br> 
-          <h3 style="text-align: center; font-size: 4.5vw; color:rgb(242, 245, 255); font: sans-serif, bold;
-          font-weight: 800;">Awards</h3>
-              
-          <div class="row" > 
-            <div class="column">
-              <img src="Assets/Awards/2017.jpg" style="width:100%">
-              <img src="Assets/Awards/2.jpg" style="width:100%">
-              <img src="Assets/Awards/3.png" style="width:100%">
-              <img src="Assets/Awards/4.png" style="width:100%">
-            </div>
-            <div class="column">
-              <img src="Assets/Awards/2017_2.jpg" style="width:100%">
-              <img src="Assets/Awards/2017_3.jpg" style="width:100%">
-              <img src="Assets/Awards/2019.jpg" style="width:100%">
-              <img src="Assets/Awards/5.png" style="width:100%">
-            </div>  
-            <div class="column">
-              <img src="Assets/Awards/IMG-20211224-WA0025.jpg" style="width:100%">
-              <img src="Assets/Awards/IMG-20211224-WA0027.jpg" style="width:100%">
-              <img src="Assets/Awards/IMG-20211224-WA0032.jpg" style="width:100%">
-              <img src="Assets/Awards/6.png" style="width:100%">
-            </div>
-          </div>
-          </div>
-      </div>
-
-<script src="sketch.js"></script>
-<script>
-          var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
-      var span = document.getElementsByClassName("close")[0];
-
-      btn.onclick = function() {
-        modal.style.visibility = "visible";
-        modal.style.opacity = "1";
-
-      }
-
-      span.onclick = function() {
-        modal.style.visibility = "hidden";
-        modal.style.opacity = "0";      
-      }
-
-      var modal2 = document.getElementById("myModal2");
-      var btn2 = document.getElementById("myBtn2");
-      var span2 = document.getElementsByClassName("close2")[0];
-
-      btn2.onclick = function() {
-        modal2.style.visibility = "visible";
-        modal2.style.opacity = "1";
-
-      }
-
-      span2.onclick = function() {
-        modal2.style.visibility = "hidden";
-        modal2.style.opacity = "0";      
-      }
-    </script>
 </body>
-</html> 
+</html>
