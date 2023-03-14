@@ -105,7 +105,7 @@
 - Loading screen
 - Sections rewamped (About, Art, Codes, etc.)
 - Interface tweaks and fixes was been done in a bulk
-- 
+
 <hr>
 
 #### Developed and Maintained by [Navaneet.J](https://github.com/navaneet239)
