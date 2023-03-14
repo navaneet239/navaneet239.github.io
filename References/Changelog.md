@@ -90,8 +90,24 @@
 - Connected stylesheets, resources and scripts from [webflow.com](https://www.webflow.com)
 - Interface tweaks and fixes was been done in a bulk
 
+## v4.5
+### Code name: Legacy good bye
+- The legacy version of the Homepage have been completely shifted to the modern version.
+- Major issues was been patched
+
+## v5.0
+### Code name: Modern Era 2.0
+![stage 12](https://user-images.githubusercontent.com/74445713/225093561-923cc421-7677-4b05-8a7f-34dd0ba8a7c8.png)
+- Glassmorphism theme
+- New stats and poem section
+- Dedicated Contact page
+- Stylish blurred cursor blob background
+- Loading screen
+- Sections rewamped (About, Art, Codes, etc.)
+- Interface tweaks and fixes was been done in a bulk
+- 
 <hr>
 
 #### Developed and Maintained by [Navaneet.J](https://github.com/navaneet239)
-#### Homepage © 2022 by Navaneet.J is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+#### Homepage © 2022-23 by Navaneet.J is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
