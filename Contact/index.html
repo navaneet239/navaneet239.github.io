@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+
+  <link href="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/63851416a85e7918eaee36b8_aem4g-m8ba8-001.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/638778432dfd059beececd18_Uiconstock-Dynamic-Flat-Android-Home.ico" rel="apple-touch-icon"/>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div id="blur">
+    <div id="blob"></div>
+    <div id="blob2"></div>
+    <div id="blob3"></div>
+  </div>
+  
+  <main>
+    <div class="wrapper" id="contact-form">
+      <header>Send us a Message</header>
+      <form action="https://formspree.io/f/moqzldll" method="POST">
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Enter your email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="phone" placeholder="Enter your phone" required>
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="website" placeholder="Enter your website">
+            <i class='fas fa-globe'></i>
+          </div>
+        </div>
+        <div class="message">
+          <textarea placeholder="Write your message" name="message" required></textarea>
+          <i class="material-icons">message</i>
+        </div>
+        <div class="button-area">
+          <button type="submit">Send Message</button>
+          <span></span>
+        </div>
+        <a href="../index.html">Return Home</a>
+      </form>
+    </div>
+  </main>
+  <script type="text/javascript" src="../vanilla-tilt.js"></script>
+
+  <script>
+
+    const blob = document.getElementById("blob");
+
+    document.body.onpointermove = event => {
+        const { clientX, clientY } = event; 
+
+        blob.animate({
+            left: `${clientX}px`,
+            top: `${clientY}px`
+        },{ duration: 3000, fill: "forwards" })
+    }
+
+    
+    VanillaTilt.init(document.querySelector("#contact-form"), {
+        max: 2,
+        speed: 100
+      });
+                
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll("#contact-form"));
+  </script>
+
+</body>
+</html>
