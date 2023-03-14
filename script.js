@@ -52,13 +52,17 @@ var navRight = document.getElementById("nav-menu");
 
 ham.addEventListener("click", ()=>{
   if (hamb2.style.width == '44px') {
+      hamb1.style.webkitTransform= 'translateY(0px) rotate(0deg)'
       hamb1.style.transform= 'translateY(0px) rotate(0deg)'
+      hamb2.style.webkitTransform= 'rotate(0deg)'
       hamb2.style.transform= 'rotate(0deg)'
       hamb2.style.width= '34px'
       hamb2.style.translate= '10px 0'
       navRight.style.right = '-100%'
   }
   else{
+      hamb1.style.webkitTransform= 'translateY(15px) rotate(45deg)'
+      hamb2.style.webkitTransform= 'rotate(-45deg)'
       hamb1.style.transform= 'translateY(15px) rotate(45deg)'
       hamb2.style.transform= 'rotate(-45deg)'
       hamb2.style.width= '44px'
@@ -69,6 +73,8 @@ ham.addEventListener("click", ()=>{
 
 function navMobile(){
   if (hamb2.style.width == '44px') {
+    hamb1.style.webkitTransform= 'translateY(0px) rotate(0deg)'
+    hamb2.style.webkitTransform= 'rotate(0deg)'
     hamb1.style.transform= 'translateY(0px) rotate(0deg)'
     hamb2.style.transform= 'rotate(0deg)'
     hamb2.style.width= '34px'
@@ -76,6 +82,8 @@ function navMobile(){
     navRight.style.right = '-100%'
 }
 else{
+    hamb1.style.webkitTransform= 'translateY(15px) rotate(45deg)'
+    hamb2.style.webkitTransform= 'rotate(-45deg)'
     hamb1.style.transform= 'translateY(15px) rotate(45deg)'
     hamb2.style.transform= 'rotate(-45deg)'
     hamb2.style.width= '44px'
@@ -87,6 +95,7 @@ else{
 function showAboutMore(){
     document.getElementById('about-moreBtn').style.transition= "all 0.75s";
     document.getElementById('about-moreBtn').style.opacity= "1";
+    document.getElementById('about-moreBtn').style.webkitTransform= "translate(-50%) scale(1.1)";
     document.getElementById('about-moreBtn').style.transform= "translate(-50%) scale(1.1)";
     document.getElementById('about-moreBtn').style.marginTop= "-6px";
 }
@@ -94,6 +103,7 @@ function showAboutMore(){
 function hideAboutMore(){
     document.getElementById('about-moreBtn').style.transition= "all 0.2s";
     document.getElementById('about-moreBtn').style.opacity= "0";
+    document.getElementById('about-moreBtn').style.webkitTransform= "translate(-50%) scale(1)";
     document.getElementById('about-moreBtn').style.transform= "translate(-50%) scale(1)";
     document.getElementById('about-moreBtn').style.marginTop= "-25px";
 }
@@ -103,6 +113,7 @@ function showAboutMMore(){
     document.getElementById('aboutM-moreBtn').style.transition= "all 0.75s";
     document.getElementById('about-expand').style.opacity= "0";
     document.getElementById('aboutM-moreBtn').style.opacity= "1";
+    document.getElementById('aboutM-moreBtn').style.webkitTransform= "scale(1.1)";
     document.getElementById('aboutM-moreBtn').style.transform= "scale(1.1)";
     document.getElementById('aboutM-moreBtn').style.marginTop= "-6px";
 }
@@ -112,6 +123,7 @@ function hideAboutMMore(){
     document.getElementById('aboutM-moreBtn').style.transition= "all 0.2s";
     document.getElementById('about-expand').style.opacity= "1";
     document.getElementById('aboutM-moreBtn').style.opacity= "0";
+    document.getElementById('aboutM-moreBtn').style.webkitTransform= "scale(1)";
     document.getElementById('aboutM-moreBtn').style.transform= "scale(1)";
     document.getElementById('aboutM-moreBtn').style.marginTop= "-25px";
 }
