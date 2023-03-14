@@ -4,7 +4,7 @@
 This is the official repository kept and maintained for the portfolio website of @navaneet239.
 
 
-![Homepage-banner](https://user-images.githubusercontent.com/74445713/175105470-52c3a05d-273c-4da2-adf3-c72d703fcb15.png)
+![Homepage-banner](Assets/General/cover.png)
 
 ### View the [Changelog](https://github.com/navaneet239/navaneet239.github.io/blob/main/References/Changelog.md) to see its progress
 <hr>
