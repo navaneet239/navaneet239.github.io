@@ -108,8 +108,8 @@
 
 ## v5.5
 ### Code name: Modern Era Simpilicty Edition (3.0)
-![stage 13](https://github.com/navaneet239/navaneet239.github.io/assets/74445713/e1c408ad-0a77-4432-9871-05efb7e1bbfb)
-> **Under Progress, will be implemented soon...**
+![stage 13](https://github.com/navaneet239/navaneet239.github.io/assets/74445713/eb0cbcb6-eadf-4b12-a189-8383112000e6)
+**Under Progress, will be implemented soon...**
 
 <hr>
 
