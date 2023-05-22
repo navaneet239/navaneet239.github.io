@@ -106,6 +106,11 @@
 - Sections rewamped (About, Art, Codes, etc.)
 - Interface tweaks and fixes was been done in a bulk
 
+## v5.5
+### Code name: Modern Era Simpilicty Edition (3.0)
+![stage 13](https://github.com/navaneet239/navaneet239.github.io/assets/74445713/e1c408ad-0a77-4432-9871-05efb7e1bbfb)
+> **Under Progress, will be implemented soon...**
+
 <hr>
 
 #### Developed and Maintained by [Navaneet.J](https://github.com/navaneet239)
