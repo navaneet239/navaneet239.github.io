@@ -116,7 +116,6 @@ background: linear-gradient(
 animation: rotate 20s infinite;
 }
 
-
 @keyframes rotate {
 from{-webkit-transform:translate(-50%, -50%), rotate(0deg); transform:translate(-50%, -50%), rotate(0deg);}
 50%{scale: 1 1.2;}
@@ -187,16 +186,17 @@ left: 50dvw;
 top: 50vh;
 left: 50vw;
 width: 95%;
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%) scale(1.09);
+transform: translate(-50%, -50%)  scale(1.09);
 z-index: 1;
 transition: all 0.3s;
 }
 
 #i-am-nj h1{
-font-size: 50px;
+font-size: 45px;
 color: white;
 border: none;
+font-weight: 550;
 -webkit-transform: translateY(0px);
 transform: translateY(0px);
 }
@@ -204,7 +204,12 @@ transform: translateY(0px);
 #i-am-nj p{
 padding: 10px;
 font-weight: 500;
+margin-top: -17.5px;
+margin-bottom: 17.5px;
 }
+
+#HeadBtnRes{padding: 12px 37px;}
+#HeadBtnRes:hover{padding: 12px 57px;}
 
 #get-started {
 height: 50px; width: 100px;
@@ -215,7 +220,6 @@ border: 2.5px solid white;
 transform: rotate(90deg) scale(0.60);
 }
 
-#get-started:active{-webkit-transform: scale(0.90); transform: scale(0.90);}
 
 #get-started-move{
 position: absolute;
@@ -238,10 +242,7 @@ width: 7.5px; height: 7.5px; background-color: white; border-radius: 50%;
 
 #Hero-navbar a {
   float: left;
-  color: white;
-  text-align: center;
-  padding: 12px; padding-left: 17px; padding-right: 17px;
-  text-decoration: none;
+  padding: 12px 17px;
   font-size: 18px; 
   line-height: 25px;
   margin: 5px;
@@ -250,11 +251,9 @@ width: 7.5px; height: 7.5px; background-color: white; border-radius: 50%;
   border:  1px solid rgba(0, 0, 0, 0);
 }
 
-#Hero-navbar a:hover{scale: 0.95; background-color:rgba(114, 114, 114, 0.05);
-  border-top: 1px solid rgba(132, 132, 132, 0.25);
-  border-bottom:  1px solid rgba(0, 0, 0, 0); border-left:  1px solid rgba(0, 0, 0, 0); border-right:  1px solid rgba(0, 0, 0, 0);
-  -webkit-backdrop-filter: blur(25px);   
-  backdrop-filter: blur(25px);  
+#Hero-navbar a:hover{
+  scale: 0.95; background-color:rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(132, 132, 132, 0.25);
 }
 #Hero-navbar a:active{scale: 0.85;backdrop-filter: blur(25px);}
 
@@ -262,21 +261,12 @@ width: 7.5px; height: 7.5px; background-color: white; border-radius: 50%;
   width: 175px;
 }
 
-#Hero-navbar a:hover {
-  background-color: #dddddd36;
-}
-
 #Hero-navbar a.active {
   background-color: rgb(255, 140, 0);
-  color: white; border-radius: 25px;
 }
 
 #Hero-navbar a.active:hover {
-  background-color:rgba(196, 196, 196, 0.15);
-  border-top: 1px solid rgba(132, 132, 132, 0.25);
-  border-bottom:  1px solid rgba(0, 0, 0, 0); border-left:  1px solid rgba(0, 0, 0, 0); border-right:  1px solid rgba(0, 0, 0, 0);
-  -webkit-backdrop-filter: blur(25px);   
-  backdrop-filter: blur(25px); 
+  background-color:rgba(255, 255, 255, 0.1);
 }
 
 #Hero-navbar-right {
@@ -376,7 +366,7 @@ width: 7.5px; height: 7.5px; background-color: white; border-radius: 50%;
 }
 
 #scroll-indicator:hover{transform: translateX(-50%) scale(1.1);}
-#scroll-indicator:active{transform: translateX(-50%) scale(0.90);}
+#scroll-indicator:active{transform: translateX(-50%) scale(1);}
 
 @media screen and (max-width: 865px) {
   #i-am-nj h1{
@@ -554,82 +544,78 @@ padding:30px; color: wheat; padding-bottom: 65px;
 
 .profile-card{
 position: relative;
-width: 220px;
-height: 220px;
+width: 230px;
 background:rgba(255, 255, 255, 0.1);
 padding: 30px;
-border-radius: 50%;
 box-shadow: 0px 0px 5px black;
-transition: .6s;
+transition: .3s ease;
 margin: 55px 25px;
 display:inline-block;
+border-radius: 15px;
+height: 240px;
 }
-
 .profile-card:hover{
-border-radius: 10px;
-height: 270px;
+  scale: 0.95;
+}
+.profile-card:active{
+  scale: 0.9;
 }
 
 .profile-card .img{
 position: relative;
-width: 100%;
+width: 90%;
 height: 100%;
 transition: .6s;
 z-index: 99;
+transform: translateY(-70px);
 }
 
 .img img{
-width: 100%;
-border-radius: 50%;
+width: 75%;
+border-radius: 15px;
 box-shadow: 0 0 22px #3336;
-transition: .6s;
-}
-
-
-.profile-card:hover .img{
-transform: translateY(-70px);
-}
-.profile-card:hover img{
-border-radius: 10px;
 }
 
 .caption{
 text-align: center;
--webkit-transform: translateY(-100px);
-transform: translateY(-100px);
-opacity: 0;
-transition: .6s;
+-webkit-transform: translateY(-120px) translateX(-7.5%);
+transform: translateY(-120px) translateX(-7.5%) ;
+background-color: #dddddd20; 
+padding-top: 5px;
+border-radius: 8.5px;
+width: 200px;
 }
-.profile-card:hover .caption{
-opacity: 1;
-}
-.caption h3{
-font-size: 21px;
+.caption h3 a{
+font-size: 25px;
+font-weight: normal;
+color: orange;
+padding-bottom: 1.5px;
 }
 .caption p{
 font-size: 15px;
 color: rgb(190, 173, 255);
 margin-bottom: 10px; margin-top: -5px;
-font-weight: 400;
 }
 
+.social-links{
+-webkit-transform: translateY(-105px)  translateX(-13%) ;
+transform: translateY(-105px)  translateX(-13%) ;
+width: 230px;
+}
 
-.caption .social-links a{
-color: white;
+.social-links a{
 text-align: center;
-padding: 11px; padding-left: 25px; padding-right: 25px;
-text-decoration: none;
 font-size: 15px;
+font-weight: normal;
+padding: 10px 65px;
+padding-top: 8px; 
 border-radius: 8px;
-transition: all 0.5s;
+transition: all 0.3s;
 background-color: orange;
 cursor: pointer;
 border:  1px solid rgba(0, 0, 0, 0);
--webkit-backdrop-filter: blur(25px);
-backdrop-filter: blur(25px);
 }
 .social-links a:hover{ background-color:rgba(255, 255, 255, 0.05);border: 1px solid rgba(255, 255, 255, 0.25);}
-.social-links a:active{ scale: 0.95;}
 
 footer {
 padding: 50px; margin-top: 25px;
@@ -946,7 +932,6 @@ border-radius: 5px;
 }
 
 #hover-codes{display: block;}
-#click-codes{display: none;}
 
 #poems{text-align: center; display: flex; gap: 1.5em;}
 .poems{
@@ -974,7 +959,6 @@ padding: 30px;
 
 @media screen and (max-width: 815px) {
 #hover-codes{display: none;}
-#click-codes{display: block;}
 #prime-code{  margin-top: 85px;}
 .profile-card {  margin: 30px 25px;}
 .poems {width: 100%; margin-bottom: 1.5em;}
@@ -1005,24 +989,22 @@ padding: 30px;
 
 .contact-btn{
 color: white;
-text-align: center;
-padding: 12px; padding-left: 17px; padding-right: 17px;
+padding: 12px 17px;
 text-decoration: none;
 font-size: 18px; 
+margin-right: 10px;
 border-radius: 15px;
-transition: all 0.5s;
+transition: all 0.5s; 
 border:  1px solid rgba(0, 0, 0, 0);
 background-color: rgb(255, 140, 0);
-color: white; border-radius: 25px;
 }
 
 .contact-btn:hover {
 background-color:rgba(196, 196, 196, 0.15);
-border-top: 1px solid rgba(132, 132, 132, 0.25);
-border-bottom:  1px solid rgba(0, 0, 0, 0); border-left:  1px solid rgba(0, 0, 0, 0); border-right:  1px solid rgba(0, 0, 0, 0);
--webkit-backdrop-filter: blur(25px);  backdrop-filter: blur(25px); padding-left: 37px; padding-right: 37px;
+border: 1px solid rgba(132, 132, 132, 0.25);
+padding: 12px 37px;
 }
-
+.contact-btn:active{background-color:rgba(196, 196, 196, 0.05);}
 @media screen and (max-width: 915px) {
 .contact-footer {width: 94%;}
 }
