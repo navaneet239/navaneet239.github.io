@@ -549,16 +549,17 @@ background:rgba(255, 255, 255, 0.1);
 padding: 30px;
 box-shadow: 0px 0px 5px black;
 transition: .3s ease;
-margin: 55px 25px;
+margin: 60px 35px;
 display:inline-block;
 border-radius: 15px;
 height: 240px;
+scale: 1.1;
 }
 .profile-card:hover{
-  scale: 0.95;
+  scale: 1.05;
 }
 .profile-card:active{
-  scale: 0.9;
+  scale: 1;
 }
 
 .profile-card .img{
@@ -960,7 +961,7 @@ padding: 30px;
 @media screen and (max-width: 815px) {
 #hover-codes{display: none;}
 #prime-code{  margin-top: 85px;}
-.profile-card {  margin: 30px 25px;}
+.profile-card {  margin: 50px 0px;}
 .poems {width: 100%; margin-bottom: 1.5em;}
 #poems{display: block; gap:0;}
 }
@@ -978,13 +979,14 @@ position: relative;
 left: 50%;
 transform: translateX(-50%);
 
-border-top: 1px solid rgba(132, 132, 132, 0.25);
-border-bottom:  1px solid rgba(0, 0, 0, 0); 
-border-left:  1px solid rgba(0, 0, 0, 0); 
-border-right:  1px solid rgba(0, 0, 0, 0); 
+border: 1px solid rgba(132, 132, 132, 0.25);
 border-radius: 15px;  
 text-align: center;
 padding: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
 }
 
 .contact-btn{
@@ -992,7 +994,6 @@ color: white;
 padding: 12px 17px;
 text-decoration: none;
 font-size: 18px; 
-margin-right: 10px;
 border-radius: 15px;
 transition: all 0.5s; 
 border:  1px solid rgba(0, 0, 0, 0);
@@ -1007,4 +1008,7 @@ padding: 12px 37px;
 .contact-btn:active{background-color:rgba(196, 196, 196, 0.05);}
 @media screen and (max-width: 915px) {
 .contact-footer {width: 94%;}
+}
+@media screen and (max-width: 352px) {
+  .contact-footer {display: grid;}
 }
