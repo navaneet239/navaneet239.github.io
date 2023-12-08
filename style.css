@@ -227,7 +227,7 @@ left: 50%;
 bottom: 14.75%;
 -webkit-transform: translate(-50%);
 transform: translate(-50%);
-width: 7.5px; height: 7.5px; background-color: white; border-radius: 50%;
+width: 7.5px; height: 7.5px; background-color: orange; border-radius: 50%;
 }
 
 #Hero-navbar {
