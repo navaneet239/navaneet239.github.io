@@ -29,20 +29,32 @@ const blob = document.getElementById("blob");
 }
 
 function load(){
-
+  document.getElementById("logon").style.opacity= '1';
+  document.getElementById("logon").style.transform= 'translateY(0%)'; 
     setTimeout(() => {
+      move();
+    }, 1000);
+    
+    setTimeout(() => {
+      document.getElementById("logon").style.transform= 'translateY(7.5%)';
         document.getElementById("logon").style.opacity= '0';
-    }, 1750);
+    }, 2900);
 
     setTimeout(() => {
         document.getElementById("logon").style.display= 'none';
         document.getElementById('main').style.display= 'block';
-    }, 2500);
+    }, 3550);
 
     setTimeout(() => {
         document.getElementsByClassName("header")[0].style.opacity= '1';
+        document.getElementsByClassName("headerBg")[0].style.opacity= '1';
+        document.getElementById('Hero-navbar').style.top= '0';
+        document.getElementById('Hero-navbar').style.opacity= '1';
+        document.getElementById('i-am-nj').style.top= '50dvh';
+        document.getElementById('i-am-nj').style.top= '50vh';
+        document.getElementById('i-am-nj').style.opacity= '1';
         document.body.style.overflow= "auto";
-    }, 3000);
+    }, 3750);
 }
 
 var ham = document.getElementById("ham-menu");
@@ -109,28 +121,23 @@ function hideAboutMore(){
 }
 
 function showAboutMMore(){
-    document.getElementById('about-tm').style.paddingBottom= "60px";
-    document.getElementById('aboutM-moreBtn').style.transition= "all 0.75s";
+    document.getElementById('about-tm').style.paddingBottom= "55px";
+    document.getElementById('social-linksA').style.transition= "all 0.75s";
     document.getElementById('about-expand').style.opacity= "0";
-    document.getElementById('aboutM-moreBtn').style.opacity= "1";
-    document.getElementById('aboutM-moreBtn').style.webkitTransform= "scale(1.1)";
-    document.getElementById('aboutM-moreBtn').style.transform= "scale(1.1)";
-    document.getElementById('aboutM-moreBtn').style.marginTop= "-6px";
+    document.getElementById('social-linksA').style.opacity= "1";
+    document.getElementById('social-linksA').style.webkitTransform= "scale(1.1)";
+    document.getElementById('social-linksA').style.transform= "scale(1.1)";
+    document.getElementById('social-linksA').style.marginTop= "-6px";
 }
 
 function hideAboutMMore(){
     document.getElementById('about-tm').style.paddingBottom= "65px";
-    document.getElementById('aboutM-moreBtn').style.transition= "all 0.2s";
+    document.getElementById('social-linksA').style.transition= "all 0.2s";
     document.getElementById('about-expand').style.opacity= "1";
-    document.getElementById('aboutM-moreBtn').style.opacity= "0";
-    document.getElementById('aboutM-moreBtn').style.webkitTransform= "scale(1)";
-    document.getElementById('aboutM-moreBtn').style.transform= "scale(1)";
-    document.getElementById('aboutM-moreBtn').style.marginTop= "-25px";
-}
-
-var about = document.getElementById('about-tm');
-function aboutMoreDisplay(){
-  console.log();
+    document.getElementById('social-linksA').style.opacity= "0";
+    document.getElementById('social-linksA').style.webkitTransform= "scale(1)";
+    document.getElementById('social-linksA').style.transform= "scale(1)";
+    document.getElementById('social-linksA').style.marginTop= "-25px";
 }
 
 function reveal() {
