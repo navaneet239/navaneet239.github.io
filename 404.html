@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta
+    content="The official Portfolio Homepage of Navaneet.J, a young growing Artist, athlete, and a front-end developer."
+    name="description" />
+  <meta content="Portfolio of Navaneet.J" property="og:title" />
+  <meta
+    content="The official Portfolio Homepage of Navaneet J, a young growing Artist, athlete, and a front-end developer."
+    property="og:description" />
+  <meta content="https://raw.githubusercontent.com/navaneet239/navaneet239.github.io/main/Assets/General/cover.png"
+    property="og:image" />
+
+  <meta content="Portfolio of Navaneet.J" property="twitter:title" />
+  <meta
+    content="The official Portfolio Homepage of Navaneet.J, a young growing Artist, athlete, and a front-end developer."
+    property="twitter:description" />
+  <meta content="https://raw.githubusercontent.com/navaneet239/navaneet239.github.io/main/Assets/General/cover.png"
+    property="twitter:image" />
+
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+
+  <link href="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/63851416a85e7918eaee36b8_aem4g-m8ba8-001.ico"
+    rel="shortcut icon" type="image/x-icon" />
+  <link
+    href="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/638778432dfd059beececd18_Uiconstock-Dynamic-Flat-Android-Home.ico"
+    rel="apple-touch-icon" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({ google: { families: ["Changa One:400,400italic"] } });</script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <title>404 Page not found</title>
+  <style>
+  </style>
+</head>
+
+<body onload="
+document.getElementById('logon').style.opacity= '1';
+  document.getElementById('logon').style.transform= 'translateY(0%)'; 
+">
+
+  <div id="blur">
+    <div id="blob"></div>
+    <div id="blob2"></div>
+    <div id="blob3"></div>
+  </div>
+
+  <div id="logon">
+    <div id="logon-center" style="width: 100%;">
+      <h1 style="
+          color: rgba(255, 255, 255, 0.45);
+          border: none;
+          padding: 5px;
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          font-size: 5rem;
+          ">404</h1><br>
+      <p style="width: 100%;">The page you have been looking for might have been broken or does not exist.</p>
+      <a class="contact-btn" id="Btn404" href="index.html">
+        <span class="material-symbols-rounded" id="about-expand">
+          home
+        </span>
+        Return Home</a>
+    </div>
+  </div>
+
+  <script>
+    const blob = document.getElementById("blob");
+
+    document.body.onpointermove = event => {
+      const { clientX, clientY } = event;
+
+      blob.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+      }, { duration: 3000, fill: "forwards" })
+    }
+  </script>
+</body>
+
+</html>
