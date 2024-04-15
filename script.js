@@ -70,16 +70,16 @@ ham.addEventListener("click", ()=>{
       hamb2.style.transform= 'rotate(0deg)'
       hamb2.style.width= '34px'
       hamb2.style.translate= '10px 0'
-      navRight.style.right = '-100%'
+      navRight.style.top = '-100%'
   }
   else{
-      hamb1.style.webkitTransform= 'translateY(15px) rotate(45deg)'
-      hamb2.style.webkitTransform= 'rotate(-45deg)'
-      hamb1.style.transform= 'translateY(15px) rotate(45deg)'
-      hamb2.style.transform= 'rotate(-45deg)'
+      hamb1.style.webkitTransform= 'translateY(7.5px) rotate(45deg)'
+      hamb2.style.webkitTransform= 'translateY(-7.5px) rotate(-45deg)'
+      hamb1.style.webkitTransform= 'translateY(7.5px) rotate(45deg)'
+      hamb2.style.transform= 'translateY(-7.5px) rotate(-45deg)'
       hamb2.style.width= '44px'
       hamb2.style.translate= '0 0'
-      navRight.style.right = '1%'
+      navRight.style.top = '120px'
   }
 })
 
