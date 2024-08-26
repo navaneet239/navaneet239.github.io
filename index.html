@@ -29,9 +29,8 @@
     href="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/638778432dfd059beececd18_Uiconstock-Dynamic-Flat-Android-Home.ico"
     rel="apple-touch-icon" />
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <link rel="stylesheet" href="style.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -39,13 +38,15 @@
     WebFont.load({ google: { families: ["Changa One:400,400italic"] } });
   </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
   <title>I am Navaneet.J</title>
 </head>
 <body onload="load()">
   <div id="blur">
-    <div id="blob"></div>
-    <div id="blob2"></div>
-    <div id="blob3"></div>
   </div>
 
   <div id="logon">
@@ -60,8 +61,7 @@
 
   <main id="main">
     <div class="headerBg">
-      <img
-        src="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/6388a95c066e0ed4a8e4a148_wallpaperbetter.com_1920x1080%20(5).jpg">
+      <img src="Assets/UI/bg.png">
     </div>
     <div class="header">
       <div id="Hero-navbar">
@@ -93,25 +93,25 @@
       <div id="i-am-nj" style="transform: translate(-50%, -50%) scale(1.1);">
         <p style="margin: 0; margin-bottom: -17.5px; font-size: 30px; color: orange">I am</p>
         <h1>Navaneet Jaggannathan</h1>
-        <div style="display: inline-flex;">
+        <div style="display: inline-flex;   font-family: 'Raleway', sans-serif;">
           <p style="font-size: 19px">Artist </p>
           <p style="font-size: 19; margin-left: -10px; margin-right: -10px; color: orange">•</p>
           <p style="font-size: 19;"> Athlete </p>
           <p style="font-size: 19; margin-left: -10px; margin-right: -10px; color: orange">•</p>
-          <p style="font-size: 19;"> Frontend dev</p>
+          <p style="font-size: 19;"> Fullstack dev</p>
         </div>
         <br>
-        <a class="contact-btn" id="HeadBtnRes" download="Navaneet-resume"
-          href="Assets/Works/navaneet.j-resume.pdf">Download Resume</a>
+        <a class="contact-btn" id="HeadBtnRes"
+          href="#About" style="font-weight: normal;">Learn more about me</a>
       </div>
 
       <div id="scroll-indicator" onmouseover="showAboutMore()" onmouseleave="hideAboutMore()">
         <a href="#About">
           <div id="get-started"></div>
           <a href="#About" id="about-moreBtn">Scroll Down</a>
+          <div id="get-started-move"></div>
         </a>
       </div>
-      <div id="get-started-move"></div>
     </div>
 
     <div class="content">
@@ -120,58 +120,61 @@
         <div id="my-self">
           <div class="person">
             <div class="container">
-              <div class="container-inner">
-                <img class="circle"
-                  src="https://uploads-ssl.webflow.com/6384db3d7b4dd356473d0489/6388a95c066e0ed4a8e4a148_wallpaperbetter.com_1920x1080%20(5).jpg"
-                  alt="">
-                <img class="img0 img1" src="Assets/General/my-self.png" alt="">
+              <img class="circle" src="Assets/UI/bg-sub.jpg"alt="">
+              <div class="pills">
+                <CENTER>
+                  <div class="pill">Color Pencil</div>
+                  <div class="pill">Pencil Shading</div>
+                  <div class="pill">Sketching</div>
+                  <div class="pill">Water colors</div>
+                  <div class="pill">Portrait</div>
+                  <div class="pill">Charcoal Shading</div>
+                  <div class="pill">Soft pastels</div>
+                  <div class="pill">Pen Art</div>
+                  <div class="pill">Art & Craft</div>
+                  <div class="pill">HTML</div>
+                  <div class="pill">CSS</div>
+                  <div class="pill">JS</div>
+                  <div class="pill">React</div>
+                  <div class="pill">React Native</div>
+                  <div class="pill">Python</div>
+                  <div class="pill">Typescript</div>
+                  <div class="pill">mySQL</div>
+                  <div class="pill">SVG</div>
+                  <div class="pill">UI/UX</div>
+                  <div class="pill">Web applications</div> 
+                  <div class="pill">Firebase</div>
+                  <div class="pill">AWS</div>
+                  <div class="pill">Lyricist</div>
+                  <div class="pill">Freeverse Poetry</div>
+                  <div class="pill">Ballad</div>
+                  <div class="pill">Limerick</div>
+                  
+                </CENTER>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="about-tm" onmouseover="showAboutMMore()" onmouseleave="hideAboutMMore()">
-          <p>
-          <p>
-            <span style="font-size: 2.5rem;">I'm <font color="orange">Navaneet</font>,</span><br>
-            <span style="margin-top: -10px; line-height: 1.5;">
-              <p style=" text-align: justify;">a multitalented individual, drawing from my abstract mind as a passionate
-                artist, pursuing athletic excellence, crafting codes for innovative applications as a programmer, and
-                finding solace in creative poetry at my day's end.</p>
-            </span>
-          </p>
-          <br>
+        <div id="about-tm">
+          <h2>I'm <font color="orange">Navaneet</font>,</span></h2>
+          <p style=" text-align: justify;">a multitalented individual, drawing from my abstract mind as a passionate
+            artist, pursuing athletic excellence, crafting codes for innovative applications as a programmer, and
+            finding solace in creative poetry at my day's end.</p>
           <ul>
             <li>
               <font color="orange">Art<span style="color: white; opacity: 0.5;"> : </span></font> Colorpencil, Charcoal,
-              Graphite shading and Watercolors
+              Graphite shading and Watercolors...
             </li>
             <li>
               <font color="orange">Coding<span style="color: white; opacity: 0.5;"> : </span></font> HTML-CSS-JS,
-              Python, and SQL
+              Python, and SQL...
             </li>
             <li>
               <font color="orange">Poetry<span style="color: white; opacity: 0.5;"> : </span></font> Ballad, Free verse,
-              Ode and Limerick
+              Ode and Limerick...
             </li>
           </ul>
-          </p>
-
-          <span id="social-linksA">
-            <a href="https://github.com/navaneet239" target="_blank"><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC8klEQVR4nO2ZyWsUQRTGRyWOC0aMGgkaT4leRJDIYIwHJeof4IaKeNKDIITk4nrIRVxQJGggLhdPgnFBBBHFswZFBPUkEdHkFFdUjF5+8rAG2k531+vqrpmD88HA0NP1fd+rqX71XnWhUEMNNWQGMAVYDRwBbgCvgE/Ab/OR7y/Nb4eBdhlTqDaAxcApYJT0GAFOAM3VMD4fuGhmNyt+AQPAvEqZ3wV8JH98AHb4ND4VuIx/XADq8jY/E7hH5XAXmJGX+TpDWGk8kH89jwAqsWziMJDHAxuFh0AD0GECdMlGMuaS2T+Eayjmvu1ZUmVcttkZurcEvEth/r2MKfzLsSfm3jFgrksAkufj0BZxfytwDNgMLDUTUDTZaw7QAmwAuoElEeNLCXr9Ljts0rJoTT0jds2WBL1xYFEaspMko9NDAG0WzeNaoslmjSah10MAuxW1k70ANFnBhgMeAliv0C1piKQkTsJoLhtMtPZji/ZBDYnU7NnXolsAPRbtQQ2JNCNJ2OgxgA6L9gsNia1UbvIYQKNFe0xDIg1GEooeAyhatMc1JD+qGMB0i/Z3DclbC0mjxwCaLNpvNCRPLSTtHgNYY9Ee0pBct5B0eQyg26J9TUPSZSF55DGAJxbt/RqS5dix1oP5ToXuMm0xJ4VTEl5LF5Wj+QZg2KIpDdMkLeFRxWw8AxbmYL4ZeK7QO5R2R5QmIoi9wO3QtS/mwat3MD7b1D5fFeZ/pj65A86FSK6aQ9yoZuebKQK3KXi3AjdlU0KPvoLjDIUPbffJOgSuRIhICbJSwbtCUa4EMeLyD5fFpEEPYtgEII16P/DZ5QwHOI8em5zMB8TOhgjXZSL8y7lKaf5MVq1yWg02OfflWkbOeoX5waw64SoxmIHuyHrP0lpazN8CpuViPiAoa783TjHHAPpym/mENDjhlZIDTxjCucWP64nis+QBC6ZDB44yhOO0cPpxm2xigZwRSXp1GFt+yac/MvQFlzXrdZ3XUMN/hD8JCCjaYga6xgAAAABJRU5ErkJggg=="></a>
-            <a href="https://www.instagram.com/nav_pj2309/" target="_blank"><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nO2ZwU7UYBDHF+UG8SRexIusrj6DIEGND2DWA+priFxRD0YQw5FH2BAQicEn4ACr6EusZwEvkIWfmWSMQ0Oab7q0Xzf0lzTZbGem82+mM1+/1moVFRUXB+ASMAksAt+AX0CX7HQ1hsT6ANwHBvJK/jGwS/58Bx6dZ+KXgXcUzzIw2Gvyg8AG8fgsN7AXAUvEZ7GXmi8LD7N0G3mYysJPyckjQFplUXwBrgOjwGaK3YRHgPT5ohg1172RYrfgEdDOmMwh0AKmgQYwpEdD/2upTRYBOx4BMh29rAI3A2KPAWvGb1PLR5L/mhK/4xHgWR4cAy+Dg/+/xoz6htL1BPdwKnngGvAW+AH80UOWIG/k3BkigslDwGrC7ymwn2Iv55oJn0+xBBzamtfkTwL8TqwIoA4cxRDQSpRN2p1PsgeMGP+VGAKmjb3UvJfXxv95DAG3jb2Mei+7xr8RQ8CwsT/IIGDf+A/HFuCp/3/sGf8rsUtIen7fldAzYy9Dysuc8X/Rb230N3A1dhuVQTZmfJqOQfbE+N2KNciEtYRfU4dU2p23yQ/oizuxBAgzCd8RGVL6Snqgh/yes2WjtrOeC+W5nD4lIiC+3PlXeS6ns7zQyKqyHhBban49Q/xOEa+UR9pRZG1zRyesHHe1Va6EPrBnsO0RIButZeO9R4DsEpeNe96HTLa8y8KOe9tdtrgpD1Ou5I2Ij7EzB+YzJW++DQRPyhxY72l7ve8/cFikCwBbBSTeBh7U8kC704RstGpn6JzDR76OxpoHxnP7yFdRUVErJX8BfRU8JuhGAhoAAAAASUVORK5CYII="></a>
-            <a href="https://in.pinterest.com/NavPadJag/" target="_blank"><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADq0lEQVR4nO2ZW2iPcRjH/4zNHMdGmENT0nLaxRySQq1wYaKRC3GhKKer1eIGNYxFloldKkVzaMwFSUpczLFJSVxgNIwhh21OH/3mN94e7/99n/f/f/ff1P9b7837Pr/v8zy/w3P4vZFIEkkkETeAnsBMYCtwGrgPNANf7dNs350CtgAzzJhIVwMYBewGnhMcDcAuILsrDM8EDgNtxI9W4BAwJFHGrwDeED6agOWdaXgvO+udjUqjK2zj04FaEodzRmdYxqcAZ0g8akNZiQRtm2g4GMaBDYIHwF6gABgP9AP6AjnAHGA7UBeQsyieUKmNNneARUAPJbdJeheU3K+BwZ21dX7aRJYS4yStA1pC30o2w/olqR/ASpcDXwQcAx4Dn+xjyogqU0K46JoNfFEku5FBHDCz6odiMWYe8FAxrsZsTzG2yK6mF3ZqjU9R1DaXxJgNwHf0eCT3Nb9XzQtPVQWgPWBeMIZOcsgvs9spKM4LvaMV52G6xgFTEqtmH8iwUcKJZlucmT3/wYdrrtBttpcXSjQOmHreC2sdssXiWyMwwfE912dWq4Tu1T66T2ocMBHDC3kO2evi23oXvhMeXPVCdoqP7nsaB976kGQ5ZOX2GevCt8eD672QzfLR3aRxwC/+9/GQTXPh84ou34Rsmo/uVo0Dn31IxjhkZbgd7sJ3w4PrnZDNDsMBE29VkcPlwM8XXAPMLGv3NJAfxha67UNS5pBdLL5tFlwLfbiOCvmNYRziakUWbS/eTPUpItEswWVuHbywLGAIV4XRTfhjjUP+iH1nCrLUACH0hQgIwxSZWJXI8hQONHZUh2ZZ7bsrLlymt42GVUJ2m0JvvvaW7YmC7BYw2VEH7XDhkpn6n3NkAIyzZXf8xZyyHnJDgQtPqm0xG2yCvGw6N5fYf1XBX6oy3pIOtU2EFiZU9lcr+KunN3BWwR+sobHk+wI4UCfGDnKW3FH4JwI3lfwVQSenIwlpL23LxdhCG5Uq7W1Epp3tHNv8Vwe4V30VU1NvDVmiaPUMCsW4/YSHpTEZ7zCmVKFktBhzNyTjD8RlvCPbmh8TXhggAkAsLaZETazXNZEo4dCrLP5zh2maGsIxPj0U48VKlEVRONAhdy1O4ytCm/kojixwydTtv4lsZtYceje8jPvABgyx5cBHqzzXrtDFGAxvsbOekRDjhSPmWqXE3EQoanm32qYUGBHpDgCmmoYGOG7D6DPbnrbZOqje1PPW4Wnd4jdrEklE/n/8AojRFxI/Z/hSAAAAAElFTkSuQmCC"></a>
-            <a href="https://open.spotify.com/user/r2n5niqigeto2gu5uisu0hh3p?si=8-2tD3N9Rui75en6evobcQ&amp;nd=1"
-              target="_blank"><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKklEQVR4nO2ZW4hNYRTHj8vkVnJGETN5cFeUwiBeiPIgaUySJHlgiqI8DCKXZvAgzWkIT/MkyTWTF7d407w5RFHkOsaZmZJyZhQ/rVrldDp777UvZ++ZOv+a5nL2/tZ/fd/61vqvNalUBRVUEBrAcGAZcBi4CbwE+oDf+tWnf7sBHAKWyjuppAHUAqeBz/jHJ+AUUJME8YnARWCA8OgHLgDVcZHfAvQQPXLA5nISH6m7Xm6cF1tRkx8DdBAf7orNqMiPAG4RPzoiOYmYwsYJbVFc2KTREJR8tWaGpNEjaXuohU64UNIK66dI9apUeAw8AO4DT4CsVulfhC92U/04IPLACd+Aq8AeYAWQNmqlWVKoVD48Uo3kBy1+0qaTtrkHVJl3wt1OGtimAi9vcOCDSQCqqnTCAYd3RgPzgOXAGmAdsBpYBEyTTfGwOQk4Dnz3cKLO4oBIYie8A9YquSN6Il+MMSx35AqwG5jjUvH3uYRXk8UB0fNx4DVwFJhRgoNT5b9ucUB2Kk78AW5L6Kr9ccArh2ezFgckJVrQpSHUDGzSeJ8t6U4v6GS9FyuBHUCrpla3lPoC+Oryec7igCX/nwCGeS5Wev2xwEagHfiBP/RH5cD8IORL2BoP7NfkEJkDlhC6BswFVmmTLr8/0+OXBv6napi3Wp0vAY0SUi61p91gNzcYLrE082eBhUV21xvezQ6mNCqQ09kgIQk8NTxvSqMSEn7QDTwEMlJogL3ALv1+DLgMdEYg6MyFTIZOVuz0XPD/ulUqMzLqdBAsThmVo8SpF/4G7VmBUcB24I0P8jYxpwZE8lpwUgvXEmCr1gcJmXPAGZUKEuO1Dnam+3Cg2c8O1agAixJdGj4LCuzMNL6b99XQ6OIy7isXOtWZ98bnM77IFzT1Xvo8DnRbuj4nJ6QFTBr1gcgXOCGzyqTQGop8gU6JszpHO1osaPVk4BoX7kQ23C0ar7fFQD7jNQQI60hDCCmAx7ypvmzEi5xI62lEUezyuusTYiFf5IjIiBbgYwDiom2kn54SO3EHAVgHHBTNrjPRXm1PB/Tn5/pZk2qn5P/NWkEFqaGPfwtHQDLijFWNAAAAAElFTkSuQmCC"></a>
-            <a href="https://www.reddit.com/user/npj2309/" target="_blank"><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0ElEQVR4nO2ZXYgNYRjHJ62PsC6QfO5GqzZul+IOZYvkwseVveBCSElIS+LOjY+sC9woHykJsQdFLsmKKFlEm23DBS127dmzWX566jl6y8yZd86ZT51fnc40877P+/+/78wzM884TpUqVSIHmAt0Ab3AfeAIsAGYD9QY7dYBL4AB4DGw0kkDwGG8yQMdwGXgt8vx5E3orJdLR9LiRwDfDEGbgEPADaDbwkBf0gYaDTGfXI5PBJYBL9O6Ai2GmJsl2q0CfrkYWBGv4n+FnTTEHPBpuxp4CvzQCztZ8SpKhBRpdrIEMAooqHhJkZOcLAE0GbP/zskawFbDwCUnawBnDQM7nbQCTAXWa8bJaSb5APw0DPQAt4CjwEZgRtKipwB7gU7K5zlwUCYgTuH1wEVgiPAYAs4Bc8IQOBs4o0suKfA10Kb7W/VRNyrywH4dq03HLqiW07LfT3wz0E966QOWl5r5NIs3TdS7GZDTJiuccjMg51lW6HYzMBgwSDuwABin/7mY+gqDbgbeYk+7x3V0PeK+Rd74Pbf70eQhYmHEfYuc8LpBfcWOWg8RtRH3RUszdY5HkKWWJpJagV5giat4I9BMYLjM81ge1oio77BoKyk+YEbK6ayN138b8ZX0zVuJVwPvSR9dQQxcI31cCWJAXjjSRksQA5LSvlgGbtU76hbgu0V7yXKbgbHAPssxPssY1gbUxB7L4H8DA5OB7cAd4JUWqPp1+zawzSytABMsx9gVSLwGr9EaffjBg03SI/MbQtABZklB1mKQq0BDgLgNlonio3XuLzHYPEsTUnl7IOUTYJG+9I/Rn2wv1mMPPT5kuIlvrEi8YaJOSyVx8URWPxTxhomRwA59pYuKAf34MTpU8S7XxQWjaBsGBeB86LPuY0RS5u4KC1udksUkVmzCPcxMB9YCx4F7WnHr0TpPXrefAXeBY8AaYFqioqtU+U/4AxqhQwCYpVD6AAAAAElFTkSuQmCC"></a>
-          </span>
-
-          <span class="material-symbols-outlined" id="about-expand">expand_more</span>
         </div>
       </div>
 
@@ -179,27 +182,27 @@
         <h1>My Skills</h1>
         <div id="stats-tm">
           <div class="statCont">
-            <p>🎨 Art</p>
+            <p><span class="material-symbols-rounded">palette</span>  Art</p>
             <div class="stats-container">
-              <div class="skills Art"><span>85%</span></div>
+              <div class="skills Art"></div>
             </div>
           </div>
           <div class="statCont">
-            <p>🧑&zwj;💻 Programming</p>
+            <p><span class="material-symbols-rounded">code</span>   Coding</p>
             <div class="stats-container">
-              <div class="skills Coding"><span>60%</span></div>
+              <div class="skills Coding"></div>
             </div>
           </div>
           <div class="statCont">
-            <p>🏃&zwj;♂️ Athletics</p>
+            <p><span class="material-symbols-rounded">sprint</span>   Athletics</p>
             <div class="stats-container">
-              <div class="skills Athletics"><span>50%</span></div>
+              <div class="skills Athletics"></div>
             </div>
           </div>
           <div class="statCont">
-            <p>📝 Poetry Writing</p>
+            <p><span class="material-symbols-rounded">history_edu</span>   Poetry Writing</p>
             <div class="stats-container">
-              <div class="skills Poetry"><span>70%</span></div>
+              <div class="skills Poetry"></div>
             </div>
           </div>
         </div>
@@ -213,57 +216,65 @@
 
         <div class="row" id="arts-grid">
           <div class="column">
-            <img src="Assets/Art/art1.png" style="width:100%">
+            <img src="Assets/Art/art1.png" style="width:100%" onclick="openModal('Assets/Art/art1.png')">
             <caption>Cosmic Forbidded Temple</caption>
-            <img src="Assets/Art/art2.jpg" style="width:100%">
+            <img src="Assets/Art/art2.jpg" style="width:100%" onclick="openModal('Assets/Art/art2.jpg')">
             <caption>The Orange Sac</caption>
-            <img src="Assets/Art/art3.jpg" style="width:100%">
+            <img src="Assets/Art/art3.jpg" style="width:100%" onclick="openModal('Assets/Art/art3.jpg')">
             <caption>Hidden shrine of Lord Shiva</caption>
-            <img src="Assets/Art/art20.jpg" style="width:100%">
+            <img src="Assets/Art/art20.jpg" style="width:100%" onclick="openModal('Assets/Art/art20.jpg')">
             <caption>A lonely doggy</caption>
+            <img src="Assets/Art/IMG_20240502_212837_335.jpg" style="width:100%" onclick="openModal('Assets/Art/IMG_20240502_212837_335.jpg')">
+            <caption>A Forbidded Legacy</caption>
           </div>
           <div class="column">
-            <img src="Assets/Art/art19.jpg" style="width:100%">
+            <img src="Assets/Art/art19.jpg" style="width:100%" onclick="openModal('Assets/Art/art19.jpg')">
             <caption>Jetson Jithulla, the joker-king</caption>
-            <img src="Assets/Art/art5.jpg" style="width:100%">
+            <img src="Assets/Art/art5.jpg" style="width:100%" onclick="openModal('Assets/Art/art5.jpg')">
             <caption>The Timely perspective city</caption>
-            <img src="Assets/Art/art7.jpg" style="width:100%">
+            <img src="Assets/Art/art7.jpg" style="width:100%" onclick="openModal('Assets/Art/art7.jpg')">
             <caption>The Devil v/s The Vampire</caption>
-            <img src="Assets/Art/art21.jpg" style="width:100%">
+            <img src="Assets/Art/art21.jpg" style="width:100%" onclick="openModal('Assets/Art/art21.jpg')">
             <caption>The Four Heirs</caption>
+            <img src="Assets/Art/445001578_1170154184343079_1060157159404255153_n.jpeg" style="width:100%" onclick="openModal('Assets/Art/445001578_1170154184343079_1060157159404255153_n.jpeg')">
+            <caption>The Eiffel tower</caption>
           </div>
           <div class="column">
-            <img src="Assets/Art/Expo-2022.jpg" style="width:100%">
+            <img src="Assets/Art/Expo-2022.jpg" style="width:100%" onclick="openModal('Assets/Art/Expo-2022.jpg')">
             <caption>The Levitative Burger</caption>
-            <img src="Assets/Art/Expo-2019.jpg" style="width:100%">
+            <img src="Assets/Art/Expo-2019.jpg" style="width:100%" onclick="openModal('Assets/Art/Expo-2019.jpg')">
             <caption>The Heavenly Beauty</caption>
-            <img src="Assets/Art/art6.jpg" style="width:100%">
+            <img src="Assets/Art/art6.jpg" style="width:100%" onclick="openModal('Assets/Art/art6.jpg')">
             <caption>Space is an illusion!</caption>
-            <img src="Assets/Art/art22.jpg" style="width:100%">
+            <img src="Assets/Art/art22.jpg" style="width:100%" onclick="openModal('Assets/Art/art22.jpg')">
             <caption>A one man crusade</caption>
-            <img src="Assets/Art/art24.jpg" style="width:100%">
+            <img src="Assets/Art/art24.jpg" style="width:100%" onclick="openModal('Assets/Art/art24.jpg')">
             <caption>A blue Washed hill</caption>
+            <img src="Assets/Art/441500421_291919007252205_4397020183159757740_n.jpeg" style="width:100%" onclick="openModal('Assets/Art/441500421_291919007252205_4397020183159757740_n.jpeg')">
+            <caption>A Concealed Legacy</caption>
           </div>
           <div class="column">
-            <img src="Assets/Art/art16.jpg" style="width:100%">
+            <img src="Assets/Art/art16.jpg" style="width:100%" onclick="openModal('Assets/Art/art16.jpg')">
             <caption>The Symmetrical Peacocks</caption>
-            <img src="Assets/Art/art17.jpg" style="width:100%">
+            <img src="Assets/Art/art17.jpg" style="width:100%" onclick="openModal('Assets/Art/art17.jpg')">
             <caption>The Fantacy Minecraft Mob</caption>
-            <img src="Assets/Art/art14.jpg" style="width:100%">
+            <img src="Assets/Art/art14.jpg" style="width:100%" onclick="openModal('Assets/Art/art14.jpg')">
             <caption>The Pollution Monarchy</caption>
-            <img src="Assets/Art/art23.jpg" style="width:100%">
+            <img src="Assets/Art/art23.jpg" style="width:100%" onclick="openModal('Assets/Art/art23.jpg')">
             <caption>Shiv in Abstraction</caption>
+            <img src="Assets/Art/IMG_20240709_175022_012.jpg" style="width:100%" onclick="openModal('Assets/Art/IMG_20240709_175022_012.jpg')">
+            <caption>Portrait of Jhonny Depp</caption>
           </div>
         </div>
       </CENTER>
 
       <CENTER style="padding-top: 40px; margin-bottom: -22.5px;" id="coding">
         <h4>CODING AT ACTION</h4>
-        <h1 id="codingH1">Top projects coined with just<font color="orange"> <u>Front end</u></font> tech</h1>
+        <h1 id="codingH1">Top projects coined with just<font color="orange"> <u>Web</u></font> tech</h1>
 
         <div class="profile-card" id="prime-code">
-          <div class="img"><img src="https://ripenos.github.io/Assets/General/ripenOs.jpg"
-              style="  background-color: white;padding: 10px;"></div>
+          <div class="img"><img src="Assets/Works/ripenOs.png"
+              style="padding: 10px;"></div>
           <div class="caption">
             <h3><a href="https://ripenos.github.io/">RGOS</a></h3>
             <p>A Family of web operating systems in your browsers</p>
@@ -273,7 +284,7 @@
 
         <div class="profile-card">
           <div class="img"><img src="https://qph.cf2.quoracdn.net/main-qimg-01e7b6400981899b80055f9ad51454ea"
-              style="  background-color: white;padding: 23.5px;"></div>
+              style="  padding: 23.5px;"></div>
           <div class="caption">
             <h3><a href="https://navaneet239.github.io/Windows-replica/">Win Replicas</a></h3>
             <p>MS Windows Emulators from Win1.0 to Win11</p>
@@ -284,7 +295,7 @@
         </div>
         <div class="profile-card">
           <div class="img">
-            <img src="Assets/Works/alienRunner.png" style="  background-color: white;padding: 5px;">
+            <img src="Assets/Works/alienRunner.png" style=" padding: 15px;">
           </div>
           <div class="caption">
             <h3><a href="https://navaneet239.github.io/AlienRunner/">Alien Runner</a></h3>
@@ -292,6 +303,18 @@
           </div>
           <div class="social-links">
             <a href="https://navaneet239.github.io/AlienRunner/" target="_blank">Check Out</a>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="img">
+            <img src="Assets/Works/morpheus.png" style=" padding: 5px;">
+          </div>
+          <div class="caption">
+            <h3><a href="https://navaneet239.github.io/AlienRunner/">Morpheus</a></h3>
+            <p>A sustainable travel companion app</p>
+          </div>
+          <div class="social-links">
+            <a href="https://projectmorpheus-amj.github.io/" target="_blank">Check Out</a>
           </div>
         </div>
       </CENTER>
@@ -398,6 +421,12 @@
         </div>
       </div>
     </div>
+
+    <div class="art-modal" id="myModal">
+      <span class="material-symbols-rounded" onclick="closeModal()">close</span>
+      <img src id="artModScreen">
+    </div>
+
     <div class="contact-footer">
       <a class="contact-btn" href="Contact">Get in touch with me!</a>
       <a class="contact-btn" download="Navaneet-resume" href="Assets/Works/navaneet.j-resume.pdf">Download Resume</a>
@@ -535,42 +564,19 @@
 
     VanillaTilt.init(document.querySelector("#my-self"), {
       max: 4,
-      speed: 100,
-      glare: true,
-      "max-glare": 0.15
+      speed: 100
     });
 
     //It also supports NodeList
     VanillaTilt.init(document.querySelectorAll("#my-self"));
 
-    VanillaTilt.init(document.querySelector("#contextMenu"), {
-      max: 4,
-      speed: 100
-    });
-
-    //It also supports NodeList
-    VanillaTilt.init(document.querySelectorAll("#contextMenu"));
-
     var navbar = document.getElementById('Hero-navbar')
     var myScrollFunc = function () {
       var y = window.scrollY;
       if (y <= 100) {
-        navbar.style.background = "linear-gradient(180deg, rgb(0, 0, 0), transparent)";
-
-        navbar.style.borderRadius = "0px";
-        navbar.style.boxShadow = "0px 0px 0px 1px transparent";
-        navbar.style.backdropFilter = "blur(0px)";
-        navbar.style.margin = "0px";
-        navbar.style.padding = "30px";
-        navbar.style.width = "100%";
+        navbar.classList.remove('scrolled')
       } else {
-        navbar.style.background = "rgba(0, 0, 0, 0.45)";
-        navbar.style.borderRadius = "20px";
-        navbar.style.boxShadow = "0px 0px 0px 1px rgba(132, 132, 132, 0.35)";
-        navbar.style.backdropFilter = "blur(35px)";
-        navbar.style.margin = "15px";
-        navbar.style.padding = "7.5px 12.5px";
-        navbar.style.width = "calc(100% - 30px)";
+        navbar.classList.add('scrolled')
       }
     };
 
