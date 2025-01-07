@@ -3,11 +3,7 @@
 # The Official Homepage Portfolio website
 This is the official repository kept and maintained for the portfolio website of [Navaneet.J](https://github.com/navaneet239)
 
-### A young Artist, athlete, and a front-end developer
-
-
 ![Homepage-banner](Assets/General/cover.png)
-
 
 ### View the [Changelog](https://github.com/navaneet239/navaneet239.github.io/blob/main/References/Changelog.md) to see its progress
 <hr>
