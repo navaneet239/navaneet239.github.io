@@ -34,11 +34,8 @@
 <body>
     <script>
         window.addEventListener('load', function() {
-            // Define the new URL
             const newUrl = 'https://navaneetj239.web.app';
-
-            // Use history.replaceState to update the URL without reloading the page
-            window.history.replaceState(null, '', newUrl);
+            location.replace(newUrl)
         });
     </script>
 </body>
